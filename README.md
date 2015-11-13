@@ -64,7 +64,7 @@ This page should only be viewed by the Administrator and is used to search for u
 
 <h3>User</h3>
 This is the single user cusomization page. Password/name/etc changing.
-
+This page will also be used by the administrator to create a new user. Likely by the id=new param.
 Parameters passed would be the User's Id. Only administrators should be able to change other user's info.
 
 
