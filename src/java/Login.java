@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author Doug
  */
 @WebServlet(urlPatterns = {"/Login"})
-public class HandleLogin extends HttpServlet {
+public class Login extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -32,8 +32,10 @@ public class HandleLogin extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         
-        System.out.println("You shouldn't be here... Redirecting...");
-        response.sendRedirect("index.html");
+        //show login page
+        response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
+        out.println("<h1>Login</h1>");
         
     }
 
