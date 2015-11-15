@@ -3,15 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/Exams.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/User.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/Home.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/web/WEB-INF/web.xml</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/Users.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/Exam.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/src/java/HandleLogin.java</file>
-            <file>file:/C:/Users/Doug/Documents/NetBeansProjects/ExamScheduler/web/index.html</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/exam.jsp</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/user.jsp</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/login.jsp</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/css/style.css</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/mathe_000/Documents/GitHub/Exam-Scheduler/web/home.jsp</file>
         </group>
     </open-files>
 </project-private>

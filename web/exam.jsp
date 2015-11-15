@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<!--This is the first page, the Login page.-->
-<!--Why does Petri have to mock my coding, I think it's fine. It loads doesn't it?-->
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+    "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
 		<title>Login Screen</title>
-        <link rel="icon" href="index_files/HumberFavicon.png" type="image/jpg" sizes="128x128">
+        <link rel="icon" href="img/HumberFavicon.png" type="image/jpg" sizes="128x128">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
+                
 	</head>
 	<body>
 		<div id="divContainer">
