@@ -1,15 +1,25 @@
-<%-- 
-    Document   : Home
-    Created on : 15-Nov-2015, 1:14:46 AM
-    Author     : mathe_000
---%>
+<%
+/*
+    ExamScheduler - Nov, 2015
+    Humber College - Computer Programmer
+    Obj-Oriented Analysis & Design - CPAN-205-0NB
+    
+    TODO for this file:
+    - Include Logics classes
+    - Implement validation and descriptive error handling.
+    
+*/
+    
+    //this page will dynamically list menus to the user
+    
+%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>User Home</title>
     </head>
     <body>
         <h1>Home page</h1>
