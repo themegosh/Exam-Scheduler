@@ -45,19 +45,19 @@ You resolve a conflict by editing the file to manually merge the parts of the fi
 First, if you don't already have Netbeans installed, [get it from here] (https://netbeans.org/downloads/). (Java EE bundle) This edition includes Tomcat which is what the server will be running on. (Like Apache, but for Java files)
 
 If you already have Netbeans installed, you're going to want to go to the Plugins page and install/activate "Java EE Base".
- 1. In netbeans, go to "Tools" > "Plugins".
- 2a. Go to the "Available Plugins" tab, and search for "Java EE Base". Check its box, and hit install.
- 2b. If you can't find "Java EE Base" in the "Available Plugins" tab, go to the "Installed" tab and locate it there. Check its box, then hit the "Activate" button.
- 3. Reboot Netbeans as prompted after the installation is complete.
- 4. In Netbeans, go to "File" > "Open Project" and find the github install folder (EX: "C:\Users\.....\Documents\GitHub\Exam-Scheduler")
- 5. After opening the project, you'll get an error saying there is no server configured.
-   5.1. [Download Tomcat 7.0] (http://apache.mirror.rafal.ca/tomcat/tomcat-7/v7.0.65/bin/apache-tomcat-7.0.65-windows-x86.zip)
-   5.2. Extract this folder somewhere on your computer. The Netbeans directory is a decent location, because thats likely the only program you'll use it with. (C:\Programs (x86)\Netbeans\)
-   5.3 In Netbeans, right click the project name in root of the project tree in the left panel. Select "Resolve Missing Server Problem..."
-   5.4 Click "Add Server..." in the window that opens.
-   5.5 Choose "Apache Tomcat or TomEE" fron the list, and hit Next.
-   5.6 Click Browse for a server location. This is whereever you extracted the Tomcat folder to. For me, its "C:\Program Files (x86)\NetBeans 8.1\apache-tomcat-7.0.65". Enter a random username and password (username test, password test) and hit finish. (the username and pass are completely unused ever again)
-   5.7 You're finished! Press the green play button in the main toolbar to build+run the server. It should open a new browser page pointing towards (If you run into errors, post a message to the skype group. Or a direct message on Facebook.)
+1. In netbeans, go to "Tools" > "Plugins".
+2a. Go to the "Available Plugins" tab, and search for "Java EE Base". Check its box, and hit install.
+2b. If you can't find "Java EE Base" in the "Available Plugins" tab, go to the "Installed" tab and locate it there. check its box, then hit the "Activate" button.
+3. Reboot Netbeans as prompted after the installation is complete.
+4. In Netbeans, go to "File" > "Open Project" and find the github install folder (EX: "C:\Users\.....\Documents\GitHub\Exam-Scheduler")
+5. After opening the project, you'll get an error saying there is no server configured.
+  5.1. [Download Tomcat 7.0] (http://apache.mirror.rafal.ca/tomcat/tomcat-7/v7.0.65/bin/apache-tomcat-7.0.65-windows-x86.zip)
+  5.2. Extract this folder somewhere on your computer. The Netbeans directory is a decent location, because thats likely the only program you'll use it with. (C:\Programs (x86)\Netbeans\)
+  5.3 In Netbeans, right click the project name in root of the project tree in the left panel. Select "Resolve Missing Server Problem..."
+  5.4 Click "Add Server..." in the window that opens.
+  5.5 Choose "Apache Tomcat or TomEE" fron the list, and hit Next.
+  5.6 Click Browse for a server location. This is whereever you extracted the Tomcat folder to. For me, its "C:\Program Files (x86)\NetBeans 8.1\apache-tomcat-7.0.65". Enter a random username and password (username test, password test) and hit finish. (the username and pass are completely unused ever again)
+  5.7 You're finished! Press the green play button in the main toolbar to build+run the server. It should open a new browser page pointing towards (If you run into errors, post a message to the skype group. Or a direct message on Facebook.)
  
 
 
