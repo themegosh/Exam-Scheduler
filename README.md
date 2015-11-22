@@ -10,7 +10,8 @@ The first piece of software you need is the Github Desktop App available from he
 In order to continue, you're going to need to create a Github account and send your username to facebook.com/doug.mathew or through skype: doug.mathew in order to be added as a collaborator. Once you've got the app installed and an account created and added to the project by Doug you're good to go.
 
 ####Obtainig a copy of the Exam-Scheduler repository:  
- - https://help.github.com/desktop/guides/contributing/cloning-a-repository-from-github-desktop/ If you've been added as a collaborator, you'll see the Exam-Scheduler repository listed for you to clone. The default location it will download to on Windows is "C:\Users\.....\Documents\GitHub\Exam-Scheduler".
+ - https://help.github.com/desktop/guides/contributing/cloning-a-repository-from-github-desktop/ 
+ - If you've been added as a collaborator, you'll see the Exam-Scheduler repository listed for you to clone. The default location it will download to on Windows is "C:\Users\.....\Documents\GitHub\Exam-Scheduler".
 
 ####Syncing your local copy of the Repository
 Before doing any work on your local copy of the project, its extremely important to ensure that it is up to date with any changes made by others in the repository. To do this, open the Github Desktop app, select "Exam-Scheduler" from the left list of repositories, and click the "Sync" button in the top right corner. I cannot emphasize how important it is to do this before making your own changes to the project, as it will save you the headache of "merging conflicts" that can be encountered when you're trying to push changes to the server where other changes have already been made (to one or more specific files). I'll cover how to resolve this later.
@@ -19,6 +20,8 @@ Before doing any work on your local copy of the project, its extremely important
 The easiest thing to do is follow this guide  https://help.github.com/desktop/guides/contributing/committing-and-reviewing-changes-to-your-project/
 
 One thing that is important though often overlooked, is the Commit Message. Writing something here helps others understand what changes have been made. This should be a short descriptive sentance, and will likely be seen by Alireza when hes grading.
+
+Don't forget to Sync after making commits. Otherwise your changes remain on your local copy.
 
 ####Resolving Commit Conflicts
 Git Commit Conflicts can occur when multiple people are making changes to the repository at the same time and have changed the code in a way that may overlap which results in Git not knowing what lines to overwrite. If this occurs, you should see a message that contains the file in conflict. When you open the mentioned file, you should see something that resembles this which indicates a conflict:
@@ -30,14 +33,16 @@ Git Commit Conflicts can occur when multiple people are making changes to the re
  >>>>>>> 4e2b407f501b68f8588aa645acafffa0224b9b78:mergetest
 ```
 `<<<<<<<`: Indicates the start of the lines that had a merge conflict. The first set of lines are the lines from the file that you were trying to merge the changes into.
+
 `=======`: Indicates the break point used for comparison. Breaks up changes that user has committed (above) to changes coming from merge (below) to visually see the differences.
+
 `>>>>>>>`: Indicates the end of the lines that had a merge conflict.
 
 #####How do I resolve a merge conflict in a file?
-You resolve a conflict by editing the file to manually merge the parts of the file that git had trouble merging. This may mean discarding either your changes or someone else's or doing a mix of the two. You will also need to delete the '<<<<<<<', '=======', and '>>>>>>>' in the file. Once you're satisfied with the end file, save it and try to commit again in the Github app.
+You resolve a conflict by editing the file to manually merge the parts of the file that git had trouble merging. This may mean discarding either your changes or someone else's or doing a mix of the two. You will also need to delete the '<<<<<<<', '=======', and '>>>>>>>' in the file. Once you're satisfied with the result, save it and try to commit again in the Github app.
 
 ###Editing and Testing the Project in Netbeans
-First, if you don't already have Netbeans installed, [get it from here]. (https://netbeans.org/downloads/) (Java EE bundle) This edition includes Tomcat which is what the server will be running on. (Like Apache, but for Java files)
+First, if you don't already have Netbeans installed, [get it from here] (https://netbeans.org/downloads/). (Java EE bundle) This edition includes Tomcat which is what the server will be running on. (Like Apache, but for Java files)
 
 If you already have Netbeans installed, you're going to want to go to the Plugins page and install/activate "Java EE Base".
  1. In netbeans, go to "Tools" > "Plugins".
@@ -57,7 +62,7 @@ If you already have Netbeans installed, you're going to want to go to the Plugin
 
 
 ##The Pages
-Each page will have two parts: GET and POST handling, with some exceptions.
+Each page will have two parts: The rest of this document is reserved for describing what all of the pages will do. This will likely need to be completely overhauled.
 
 ###Login
 #####GET
