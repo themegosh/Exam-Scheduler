@@ -46,8 +46,8 @@ First, if you don't already have Netbeans installed, [get it from here] (https:/
 
 If you already have Netbeans installed, you're going to want to go to the Plugins page and install/activate "Java EE Base".
  1. In netbeans, go to "Tools" > "Plugins".
- 2a. Go to the "Available Plugins" tab, and search for "Java EE Base". Check its box, and hit install.
- 2b. If you can't find "Java EE Base" in the "Available Plugins" tab, go to the "Installed" tab and locate it there. check its box, then hit the "Activate" button.
+ 2. Go to the "Available Plugins" tab, and search for "Java EE Base". Check its box, and hit install.
+  * If you can't find "Java EE Base" in the "Available Plugins" tab, go to the "Installed" tab and locate it there. check its box, then hit the "Activate" button.
  3. Reboot Netbeans as prompted after the installation is complete.
  4. In Netbeans, go to "File" > "Open Project" and find the github install folder (EX: "C:\Users\.....\Documents\GitHub\Exam-Scheduler")
  5. After opening the project, you'll get an error saying there is no server configured.
