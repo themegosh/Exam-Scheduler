@@ -77,6 +77,7 @@ Icon
 #netbeans
 nbproject/private/
 nbproject/private/*
+nbproject/project.properties
 build/
 nbbuild/
 dist/
