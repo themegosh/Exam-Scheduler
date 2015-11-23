@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -37,7 +36,6 @@ Icon
 .Spotlight-V100
 .Trashes
 /dist/
-=======
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -78,6 +76,7 @@ Icon
 
 #netbeans
 nbproject/private/
+nbproject/private/*
 build/
 nbbuild/
 dist/
@@ -99,4 +98,5 @@ target/
 .project
 .settings/
 .nb-gradle/
->>>>>>> origin/master
+
+
