@@ -13,7 +13,7 @@
     //declarations
     String result = "";
     
-    
+    //albert comment
     if (request.getParameter("submit") != null) { //POST form submission
         
         //some implementation of a user object
