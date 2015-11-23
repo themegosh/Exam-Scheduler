@@ -9,7 +9,6 @@
     - Implement validation and descriptive error handling.
     - this page will create some public global variables
     
-    test again
     
 */
     //declarations
