@@ -9,11 +9,13 @@
     - Implement validation and descriptive error handling.
     - this page will create some public global variables
     
+    test again
+    
 */
     //declarations
     String result = "";
     
-    
+    //albert comment
     if (request.getParameter("submit") != null) { //POST form submission
         
         //some implementation of a user object

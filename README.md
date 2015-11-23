@@ -2,7 +2,7 @@
 This repository contains all of the code related to the Server portion, as well as implementation of the dnyamic html Client pages.
 
 ##How to Contribute
-If you want your name to appear on any of the files, you're going to need to edit them in yourself after contributing to that file in some way. This means you're going to need to set up various pieces of software to test builds of the website along with send your changes from your pc, back to this github repo.
+If you want your name to appear on any of the files, you're going to need to edit them in yourself after contributing to that file in some way. This means you're going to need to set up various pieces of software to test builds of the website along with sending your changes from your pc, back to this github repo.
 
 ###Github Desktop App
 The first piece of software you need is the Github Desktop App available from here: https://desktop.github.com/
@@ -44,27 +44,35 @@ You resolve a conflict by editing the file to manually merge the parts of the fi
 ###Editing and Testing the Project in Netbeans
 First, if you don't already have Netbeans installed, [get it from here] (https://netbeans.org/downloads/). (Java EE bundle) This edition includes Tomcat which is what the server will be running on. (Like Apache, but for Java files)
 
-If you already have Netbeans installed, you're going to want to go to the Plugins page and install/activate "Java EE Base".
+If you already have Netbeans installed:
+
  1. In netbeans, go to "Tools" > "Plugins".
  2. Go to the "Available Plugins" tab, and search for "Java EE Base". Check its box, and hit install.
   * If you can't find "Java EE Base" in the "Available Plugins" tab, go to the "Installed" tab and locate it there. check its box, then hit the "Activate" button.
  3. Reboot Netbeans as prompted after the installation is complete.
  4. In Netbeans, go to "File" > "Open Project" and find the github install folder (EX: "C:\Users\.....\Documents\GitHub\Exam-Scheduler")
- 5. After opening the project, you'll get an error saying there is no server configured.
-  * [Download Tomcat 7.0] (http://apache.mirror.rafal.ca/tomcat/tomcat-7/v7.0.65/bin/apache-tomcat-7.0.65-windows-x86.zip)
-  * Extract this folder somewhere on your computer. The Netbeans directory is a decent location, because thats likely the only program you'll use it with. (C:\Programs (x86)\Netbeans\)
-  * In Netbeans, right click the project name in root of the project tree in the left panel. Select "Resolve Missing Server Problem..."
-  * Click "Add Server..." in the window that opens.
-  * Choose "Apache Tomcat or TomEE" fron the list, and hit Next.
-  * Click Browse for a server location. This is whereever you extracted the Tomcat folder to. For me, its "C:\Program Files (x86)\NetBeans 8.1\apache-tomcat-7.0.65". Enter a random username and password (username test, password test) and hit finish. (the username and pass are completely unused ever again)
-  * You're finished! Press the green play button in the main toolbar to build+run the server. It should open a new browser page pointing towards (If you run into errors, post a message to the skype group. Or a direct message on Facebook.)
+ 5. After opening the project, you'll get an error saying there is no server configured. To fix this:
+  1. [Download Tomcat 7.0]  (http://apache.mirror.rafal.ca/tomcat/tomcat-7/v7.0.65/bin/apache-tomcat-7.0.65-windows-x86.zip)
+  2. Extract this folder somewhere on your computer. The Netbeans directory is a decent location, because thats likely the only program you'll use it with. (C:\Programs (x86)\Netbeans\)
+  3. In Netbeans, right click the project name in root of the project tree in the left panel. Select "Resolve Missing Server Problem..."
+  4. Click "Add Server..." in the window that opens.
+  5. Choose "Apache Tomcat or TomEE" fron the list, and hit Next.
+  6. Click Browse for a server location. This is whereever you extracted the Tomcat folder to. For me, its "C:\Program Files (x86)\NetBeans 8.1\apache-tomcat-7.0.65". Enter a random username and password (username test, password test) and hit finish. (the username and pass are completely unused ever again)
+  7. You're finished! Press the green play button in the main toolbar to build+run the server. It should open a new browser page pointing towards (If you run into errors, post a message to the skype group. Or a direct message on Facebook.)
  
 
 
 ##The Pages
 Each page will have two parts: The rest of this document is reserved for describing what all of the pages will do. This will likely need to be completely overhauled.
 
+How will sessions be handled?
+
 ###Login
+Variables:
+
+**POST**
+ - session
+
 #####GET
 View: Login form with username and password fields.
 
