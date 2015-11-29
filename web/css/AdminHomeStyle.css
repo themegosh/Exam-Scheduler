@@ -1,0 +1,18 @@
+body{
+	font-family:Verdana, Geneva, sans-serif, Comic Sans MS;
+	background-color:white;
+	/*background-image:url("HumberLogo.png");*/
+	background-repeat:no-repeat;
+	background-size:513px 120px;
+	background-position:50% 32px;
+}
+
+#divAdminUserTools{
+	width:800px;
+	height:100px;
+	float:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 250px;
+	text-align:left;
+	padding-top:1px;
