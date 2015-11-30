@@ -9,7 +9,10 @@
     
 */
 %>
-<footer>
-    <h5>Footer Stuff</h5>
-    <h5 style="color:black; float:right;">&copy;1738</h5>
-</footer>
+       
+        <footer>
+            <h5>Footer Stuff</h5>
+            <h5 style="color:black; float:right;">&copy;1738</h5>
+        </footer>
+    </body>
+</html>
