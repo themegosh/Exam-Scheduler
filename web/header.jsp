@@ -27,8 +27,8 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/UserHomeStyle.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/AdminHomeStyle.css">
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
-        <script src="${pageContext.request.contextPath}/js/jquery-1.11.1.js"></script>
-        <script src="${pageContext.request.contextPath}/js/jquery-ui.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/jquery-ui.css">
         
         <script>

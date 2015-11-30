@@ -16,5 +16,5 @@
 
 
 <jsp:include page="/header.jsp" />
-Home Content
+Balls
 <jsp:include page="/footer.jsp" />
