@@ -18,6 +18,10 @@
         <title>User Search Page</title>
     </head>
     <body>
-        <h1>Home page</h1>
+        <jsp:include page="/header.jsp" />
+        <div id="divContainer">
+            Some Content
+        </div>
+        <jsp:include page="/footer.jsp" />
     </body>
 </html>

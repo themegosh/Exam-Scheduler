@@ -19,6 +19,10 @@
         <title>Searchable Exams</title>
     </head>
     <body>
-        <h1>Searchable Exams</h1>
+        <jsp:include page="/header.jsp" />
+        <div id="divContainer">
+            Some Content
+        </div>
+        <jsp:include page="/footer.jsp" />
     </body>
 </html>

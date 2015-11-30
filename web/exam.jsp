@@ -19,6 +19,10 @@
         <title>Exam Schedule Editing</title>
     </head>
     <body>
-        <h1>Exam Schedule Editing</h1>
+        <jsp:include page="/header.jsp" />
+        <div id="divContainer">
+            Some Content
+        </div>
+        <jsp:include page="/footer.jsp" />
     </body>
 </html>

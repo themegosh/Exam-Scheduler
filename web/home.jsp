@@ -22,7 +22,10 @@
         <title>User Home</title>
     </head>
     <body>
-        <h1>Home page</h1>
-        <!-- testing -->
+        <jsp:include page="/header.jsp" />
+        <div id="divContainer">
+            Some Content
+        </div>
+        <jsp:include page="/footer.jsp" />
     </body>
 </html>
