@@ -87,7 +87,7 @@ nbactions.xml
 *.class
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 
