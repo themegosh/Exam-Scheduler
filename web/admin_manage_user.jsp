@@ -133,30 +133,32 @@
 			<%
 			//a loop retrieve user infor from database, then populate them here
 			//while(hasNexeUser){ //a loop print every user as a line
-			out.println("<form action='' method=''>");
-			out.println("<tr>");
-				
-				out.println("<td>");
-					out.println("344443");
-				out.println("</td>");
-				out.println("<td>");
-					out.println("sldl");
-				out.println("</td>");
-				out.println("<td>");
-					out.println("lskdk");
-				out.println("</td>");
-				out.println("<td>");
-					out.println("eirkc");
-				out.println("</td>");
-				out.println("<td>");
-					out.println("<input type='hidden' name='user_id' value='//TODO server implement user_id'/>"); // for retrieve user_id when Edit or Delete button is clicked
-					out.println("<input type='submit' name='edit_user' value='Edit'/>"); //if edit button is clicked, put the user's infomation in the "Add or Edit User part, for further updating"
-				out.println("</td>");
-				out.println("<td>");
-					out.println("<input type='submit' name='delete_user' value='Delete'/>");  //delete button for deleting user id
-				out.println("</td>");
-			out.println("</tr>");
-			out.println("</form>");
+			for(int i=0; i<4; i++){
+				out.println("<form action='' method=''>");
+				out.println("<tr>");
+					
+					out.println("<td>");
+						out.println("344443");
+					out.println("</td>");
+					out.println("<td>");
+						out.println("sldl");
+					out.println("</td>");
+					out.println("<td>");
+						out.println("lskdk");
+					out.println("</td>");
+					out.println("<td>");
+						out.println("eirkc");
+					out.println("</td>");
+					out.println("<td>");
+						out.println("<input type='hidden' name='user_id' value='//TODO server implement user_id'/>"); // for retrieve user_id when Edit or Delete button is clicked
+						out.println("<input type='submit' name='edit_user' value='Edit'/>"); //if edit button is clicked, put the user's infomation in the "Add or Edit User part, for further updating"
+					out.println("</td>");
+					out.println("<td>");
+						out.println("<input type='submit' name='delete_user' value='Delete'/>");  //delete button for deleting user id
+					out.println("</td>");
+				out.println("</tr>");
+				out.println("</form>");
+			}
 			//} //while end here
 			%>
 
