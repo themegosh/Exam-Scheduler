@@ -11,5 +11,9 @@
     
 %>
 <jsp:include page="/header.jsp" />
-Listing multiple exams content
+
+    <div id="calendar">
+        <!-- Calls the Calendar -->
+    </div>
+
 <jsp:include page="/footer.jsp" />

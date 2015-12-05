@@ -29,12 +29,13 @@
         <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css">
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.js"></script>
-        <script src="http://momentjs.com/downloads/moment.js"></script>
+        <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/lib/moment.min.js'></script>
+        <script src="http://fullcalendar.io/js/fullcalendar-2.1.1/lib/jquery-ui.custom.min.js"></script>
+        <script src='http://fullcalendar.io/js/fullcalendar-2.1.1/fullcalendar.min.js'></script>
         <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/eggplant/jquery-ui.css">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.min.css">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.5.0/fullcalendar.print.css">
-        
+
         <script>
         $(function() {
           $( "#tabs" ).tabs();
@@ -48,6 +49,30 @@
               event.preventDefault();
             });
         });
+        </script>
+        <script>
+        
+        moment().format();
+        
+        $(document).ready(function() {
+
+            $('#calendar').fullCalendar({
+                events:[
+                    {
+                    title  : 'Demo Event',
+                    start  : '2015-12-16T13:30:00',
+                    end    : '2015-12-16T14:45:00',
+                    allDay : false
+                    }
+                /*Above is shown how the calendar collects its data. If we could
+                implement it so that when the server communicates with the data-
+                base that it could print the information into these fields. More
+                information on how this works can be found here: 
+                http://fullcalendar.io/docs/event_data/events_array/  */
+                ]
+            })
+
+        });    
         </script>
     </head>
     <body>
