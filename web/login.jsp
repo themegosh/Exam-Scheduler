@@ -1,4 +1,4 @@
-<%@ page import="humber.exam.library.Account" %>
+<%@ page import="humber.exam.library.*" %>
 
 <%
 /*
@@ -25,16 +25,25 @@
         
         //some implementation of a user object
         //try to log in using the parameters, i assume something like this:
-        //User user = new User(request.getParameter("username"), request.getParameter("password"));
+        
+        try {
+            User user = new User(request.getParameter("username"), request.getParameter("password"));
+        }
+        catch (UserException e){
+           result = "An login error occurred: " + e.getMsg();
+        }
+        catch (Exception e) {
+            result = "An login error occurred: " + e.getMessage();
+        }
         
         
         //make a string, perhase an entire <div> element, containing either a detailed error, or a success message
         //this will be output inline below
-        result = "<div class='result success error'>"
+        /*result = "<div class='result success error'>"
                 + "<h3>Some success/error result.</h3>"
                 + "<p><b> Username: " + request.getParameter("username") + "</b></p>"
                 + "<p><b> Pass " + request.getParameter("password") + "</b></p>"
-                + "</div>";
+                + "</div>";*/
         
     } else { //GET
         
