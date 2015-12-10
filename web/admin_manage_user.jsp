@@ -124,7 +124,7 @@
 				
 				<th>User_ID</th>
 				<th>User_Name</th>
-				<th>Fist_Name</th>
+				<th>First_Name</th>
 				<th>Last_Name</th>
 				<th>Edit</th>
 				<th>Delete</th>
