@@ -52,7 +52,7 @@
         </script>
         <script>
         
-        moment().format();
+        /*moment().format();
         
         $(document).ready(function() {
 
@@ -69,10 +69,10 @@
                 base that it could print the information into these fields. More
                 information on how this works can be found here: 
                 http://fullcalendar.io/docs/event_data/events_array/  */
-                ]
+               /* ]
             })
 
-        });    
+        });    */
         </script>
     </head>
     <body>
