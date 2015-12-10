@@ -1,3 +1,5 @@
+<%@ page import="scheduletest.Account" %>
+
 <%
 /*
     ExamScheduler - Nov, 2015
@@ -11,6 +13,9 @@
     
     
 */
+    
+    
+    
     //declarations
     String result = "";
     String pageTitle = "Login";
@@ -21,6 +26,7 @@
         //some implementation of a user object
         //try to log in using the parameters, i assume something like this:
         //User user = new User(request.getParameter("username"), request.getParameter("password"));
+        
         
         //make a string, perhase an entire <div> element, containing either a detailed error, or a success message
         //this will be output inline below

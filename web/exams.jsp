@@ -5,6 +5,7 @@
     Obj-Oriented Analysis & Design - CPAN-205-0NB
     
     TODO for this file:
+<jsp:include page="/footer.jsp" />
     - Make this a Searchable Exams Listing page
     
 */
@@ -16,4 +17,3 @@
         <!-- Calls the Calendar -->
     </div>
 
-<jsp:include page="/footer.jsp" />
