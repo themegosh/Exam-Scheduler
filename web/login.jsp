@@ -30,7 +30,7 @@
         catch (UserException e){
             StringWriter errors = new StringWriter();
             e.printStackTrace(new PrintWriter(errors));
-            result += "A login error occurred: " + e.getMessage() + errors.toString();
+            result += "A login error occurred: " + e.getMessage();
         }
         catch (Exception e) {
             StringWriter errors = new StringWriter();
