@@ -1,4 +1,5 @@
 <%@ page import="humber.exam.library.*" %>
+<%@ page import="java.io.*" %>
 
 <%
 /*
@@ -12,10 +13,7 @@
     - this page will create some public global variables
     
     
-*/
-    
-    
-    
+*/    
     //declarations
     String result = "";
     String pageTitle = "Login";
@@ -30,10 +28,14 @@
             User user = new User(request.getParameter("username"), request.getParameter("password"));
         }
         catch (UserException e){
-           result = "An login error occurred: " + e.getMsg();
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            result += "A login error occurred: " + e.getMessage() + errors.toString();
         }
         catch (Exception e) {
-            result = "An login error occurred: " + e.getMessage();
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            result += "An unknown exception occurred: " + e.getMessage() + errors.toString();
         }
         
         
