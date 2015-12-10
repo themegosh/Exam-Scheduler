@@ -1,4 +1,4 @@
-<%@ page import="scheduletest.Account" %>
+<%@ page import="humber.exam.library.Account" %>
 
 <%
 /*
