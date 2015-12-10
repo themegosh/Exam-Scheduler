@@ -26,6 +26,8 @@
         
         try {
             User user = new User(request.getParameter("username"), request.getParameter("password"));
+            
+            result += "Logged in Successfully!";
         }
         catch (UserException e){
             StringWriter errors = new StringWriter();
@@ -37,15 +39,6 @@
             e.printStackTrace(new PrintWriter(errors));
             result += "An unknown exception occurred: " + e.getMessage() + errors.toString();
         }
-        
-        
-        //make a string, perhase an entire <div> element, containing either a detailed error, or a success message
-        //this will be output inline below
-        /*result = "<div class='result success error'>"
-                + "<h3>Some success/error result.</h3>"
-                + "<p><b> Username: " + request.getParameter("username") + "</b></p>"
-                + "<p><b> Pass " + request.getParameter("password") + "</b></p>"
-                + "</div>";*/
         
     } else { //GET
         
