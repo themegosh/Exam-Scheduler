@@ -3,6 +3,7 @@
 <%@page import="java.util.ArrayList"%>
 <%@page import="humber.exam.library.Users"%>
 
+<% 
 /*
     ExamScheduler - Nov, 2015
     Humber College - Computer Programmer
@@ -14,14 +15,20 @@
     
 */
 
-<%   
+  
     String result = "";
+    
     Users u = new Users();
     ArrayList<User> userList;
     String list = "", disable = "disabled";
+    
+    if (session.getAttribute("userId") != null && session.getAttribute("accessLevel").equals("1")){
+        disable = "";
+    }
+    
     int id=0;
     String firstName="", lastName="", access="";
-    userList = u.getUserById(Integer.parseInt(request.getParameter("Edit")));
+    userList = u.getUserById(Integer.parseInt(request.getParameter("id")));
     for (User ul : userList) {
         id = ul.getId();
         firstName = ul.getFirstName();
@@ -43,9 +50,13 @@
     "<td><input type=\"text\" name=\"access_level\" form=\"form\" placeholder=\""+ access +"\" "+ disable +"></td>" +
     "</table>";
     
-    result += "<form action=\"User\" method=\"get\">"+
-              "<input type=\"submit\" name=\"editButton\" value=\"Edit User\">"+
-              "</form>";
+    if (session.getAttribute("userId") != null){
+        if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
+            result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
+        } else { //admin
+            result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
+        }
+    }
 %>
 
 <jsp:include page="/header.jsp" />

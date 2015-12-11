@@ -9,41 +9,46 @@
     
     TODO for this file:
     -- make this the Google Search of Users
-*/
+*/  
+    String result = "";
+    if (session.getAttribute("userId") != null && session.getAttribute("accessLevel").equals("1")){
 
         Users u = new Users();
         ArrayList<User> userList;
-        String list = "";
+        
         
         if (request.getParameter("submitUsers") != null && !request.getParameter("search").equals("")) { 
             userList = u.getUserById(Integer.parseInt(request.getParameter("search")));
             if (!userList.isEmpty()){
-                list = "<table style=\"width:100%\"><tr>"
+                result = "<table style=\"width:100%\"><tr>"
                         + "<th>User ID</th>"
                         + "<th>First Name</th>"
                         + "<th>Last Name</th>"
                         + "<th>Delete</th>";
                 for (User ul : userList) {
-                    list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
-                            + "</td><td><button form=\"editForm\" type=\"submit\" name=\"Edit\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
+                    result += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
+                            + "</td><td><button form=\"editForm\" type=\"submit\" name=\"id\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
                 }
-                list += "</table>";
+                result += "</table>";
             }else{
-                list = "User does not exist.";
+                result = "User does not exist.";
             }
         } else {
             userList = u.getAllUser();
-            list = "<table style=\"width:100%\"><tr>"
+            result = "<table style=\"width:100%\"><tr>"
                     + "<th>User ID</th>"
                     + "<th>First Name</th>"
                     + "<th>Last Name</th>"
                     + "<th>Delete</th>";
             for (User ul : userList) {
-                list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
-                        + "</td><td><button form=\"editForm\" type=\"submit\" name=\"Edit\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
+                result += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
+                        + "</td><td><button form=\"editForm\" type=\"submit\" name=\"id\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
             }
-            list += "</table>";
+            result += "</table>";
         }
+    }else{
+        result = "Not logged in.";
+    }
 %>
 
 <jsp:include page="/header.jsp" />
@@ -67,7 +72,7 @@ border-collapse: collapse;
         </form>
 
         <div>
-            <p><%= list%></p>
+            <p><%= result%></p>
         </div>
         <form action="User" method="get" id="editForm"></form>
     </body>
