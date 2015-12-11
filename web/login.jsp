@@ -1,5 +1,4 @@
-<%@ page import="humber.exam.library.*" %>
-<%@ page import="java.io.*" %>
+<%@ page import="humber.exam.library.*, java.io.*, java.util.*" %>
 
 <%
 /*
@@ -18,6 +17,12 @@
     String result = "";
     String pageTitle = "Login";
     
+    if (session.getAttribute("userId") != null){
+        result += "Already logged in!";
+        //String redirectURL = "http://whatever.com/myJSPFile.jsp";
+        response.sendRedirect("Home");
+    }
+    
     //albert comment
     if (request.getParameter("submit") != null) { //POST form submission
         
@@ -27,6 +32,11 @@
         try {
             User user = new User(request.getParameter("username"), request.getParameter("password"));
             
+            session.setAttribute("userId", String.valueOf(user.getId()));
+            session.setAttribute("firstName", user.getFirstName());
+            session.setAttribute("lastName", user.getLastName());
+            session.setAttribute("accessLevel", String.valueOf(user.getAccessLevel()));
+            
             result += "Logged in Successfully!";
         }
         catch (UserException e){
@@ -34,17 +44,12 @@
             e.printStackTrace(new PrintWriter(errors));
             result += "A login error occurred: " + e.getMessage();
         }
-        catch (Exception e) {
-            StringWriter errors = new StringWriter();
-            e.printStackTrace(new PrintWriter(errors));
-            result += "An unknown exception occurred: " + e.getMessage() + errors.toString();
-        }
         
     } else { //GET
         
         if (request.getParameter("logout") == "true"){
             //destroy session data
-            result = "<h3>Logged out.</h3>";
+            result += "<h3>Logged out.</h3>";
         }
         
     }
