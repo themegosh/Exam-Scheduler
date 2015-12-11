@@ -1,3 +1,4 @@
+<%@ page import="humber.exam.library.*, java.io.*, java.util.*" %>
 <%
 /*
     ExamScheduler - Nov, 2015
@@ -8,6 +9,30 @@
     - edit an exam schedule here
     
 */
+  
+/*
+    String result = "";
+
+if (request.getParameter("submit") != null) { //POST form submission
+
+    //some implementation of a user object
+    //try to log in using the parameters, i assume something like this:
+
+    try {
+        User user = new User(request.getParameter("courseCode"), request.getParameter("userID"), request.getParameter("teacher"));
+
+
+        result += "Added Exam Successfully!";
+        response.sendRedirect("Home");
+    }
+    catch (UserException e){
+        StringWriter errors = new StringWriter();
+        e.printStackTrace(new PrintWriter(errors));
+        result += "A login error occurred: " + e.getMessage();
+    }
+
+}    
+*/    
     
 %>
 
