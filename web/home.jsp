@@ -10,15 +10,17 @@
     - Implement validation and descriptive error handling.
     
 */
-String firstName = "";
-String lastName = "";
-String access = "";
+    String firstName = "";
+    String lastName = "";
+    String access = "";
 
-if (session.getAttribute("userId") != null){
-    firstName = session.getAttribute("firstName").toString();
-    lastName = session.getAttribute("lastName").toString();
-    access = AccessLevel.values()[Integer.valueOf(session.getAttribute("accessLevel").toString())].name();
-} 
+    if (session.getAttribute("userId") != null){
+        firstName = session.getAttribute("firstName").toString();
+        lastName = session.getAttribute("lastName").toString();
+        access = AccessLevel.values()[Integer.valueOf(session.getAttribute("accessLevel").toString())].name();
+    } else {
+        response.sendRedirect("./Login");
+    }
 %>
 
 <jsp:include page="/header.jsp" />
