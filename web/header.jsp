@@ -18,7 +18,8 @@
             menu += "<li><a href='./Home'>Home</a></li>"
                 + "<li><a href='./Exams'>Search Exams</a></li>"
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
-                + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>User Settings</a></li>";
+                + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>User Settings</a></li>"
+                + "<li><a href='./Settings'>Settings</a></li>";
         } else { //admin
             menu += "<li><a href='./Home'>Home</a></li>"
                 + "<li><a href='./Exams'>Search Exams</a></li>"
