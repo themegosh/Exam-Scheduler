@@ -19,13 +19,15 @@
     String pageTitle = "Login";
     
     if (session.getAttribute("userId") != null){
-        if (request.getParameter("logout").toString().equalsIgnoreCase("true")){
-            //destroy session data
-            session.invalidate();
-            result += "<h3>Logged out.</h3>";
-        } else {
-            result += "Already logged in!";
-            response.sendRedirect("Home");
+        if (request.getParameter("logout") != null) {
+            if (request.getParameter("logout").toString().equalsIgnoreCase("true")){
+                //destroy session data
+                session.invalidate();
+                result += "<h3>Logged out.</h3>";
+            } else {
+                result += "Already logged in!";
+                response.sendRedirect("Home");
+            }
         }
     }
     
