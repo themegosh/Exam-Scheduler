@@ -24,7 +24,7 @@
         }
         menu += "<li><a href='./Login?logout=true'>Log Out</a></li>"; //log out always shown
     } else { //not logged in
-        if (request.getParameter("logout") == "true"){
+        if (request.getParameter("logout").equalsIgnoreCase("true")){
             //destroy session data
             System.out.println(request.getRequestURL());
         }
