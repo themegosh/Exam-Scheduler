@@ -30,7 +30,7 @@
         <servlet-class>Users</servlet-class>
         <jsp-file>/users.jsp</jsp-file>
     </servlet>
-     <servlet>   // Al added this stuff
+     <servlet>   
         <servlet-name>Settings</servlet-name>
         <servlet-class>Settings</servlet-class>
         <jsp-file>/settings.jsp</jsp-file>
@@ -72,10 +72,9 @@
         <servlet-name>User</servlet-name>
         <url-pattern>/User</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>   // Al added this stuff
+    <servlet-mapping>  
         <servlet-name>Settings</servlet-name>
-        <servlet-class>Settings</servlet-class>
-        <jsp-file>/settings.jsp</jsp-file>
+        <url-pattern>/Settings</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>Home</servlet-name>
