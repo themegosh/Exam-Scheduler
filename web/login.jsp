@@ -23,7 +23,7 @@
             if (request.getParameter("logout").toString().equalsIgnoreCase("true")){
                 //destroy session data
                 session.invalidate();
-                result += "<h3>Logged out.</h3>";
+                result += "Logged out.";
             } else {
                 result += "Already logged in!";
                 response.sendRedirect("Home");
@@ -46,6 +46,7 @@
             session.setAttribute("accessLevel", String.valueOf(user.getAccessLevel()));
             
             result += "Logged in Successfully!";
+            response.sendRedirect("Home");
         }
         catch (UserException e){
             StringWriter errors = new StringWriter();
