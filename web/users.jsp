@@ -1,3 +1,6 @@
+
+<%@page import="java.util.ArrayList"%>
+<%@page import="humber.exam.library.*"%>
 <%
 /*
     ExamScheduler - Nov, 2015
@@ -7,22 +10,48 @@
     TODO for this file:
     -- make this the Google Search of Users
 */
+
     
     String result = "";
-    
-    if (request.getParameter("submitUsers") != null) { //POST form submission
-        result += "button pressed, user searched: ";
-        result += request.getParameter("search");
-    }
-    
+        Users u = new Users();
+        ArrayList<User> userList;
+        String list = "";
+        
+        if (request.getParameter("submitUsers") != null && !request.getParameter("search").equals("")) { 
+            userList = u.getUserById(Integer.parseInt(request.getParameter("search")));
+            if (!userList.isEmpty()){
+                list = "<table style=\"width:100%\"><tr>"
+                        + "<th>User ID</th>"
+                        + "<th>First Name</th>"
+                        + "<th>Last Name</th>"
+                        + "<th>Delete</th>";
+                for (User ul : userList) {
+                    list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
+                            + "</td><td><input type=\"checkbox\" value=\"Delete\"></td></tr>";
+                }
+                list += "</table>";
+            }else{
+                list = "User does not exist.";
+            }
+        } else {
+            userList = u.getAllUser();
+            list = "<table style=\"width:100%\"><tr>"
+                    + "<th>User ID</th>"
+                    + "<th>First Name</th>"
+                    + "<th>Last Name</th>"
+                    + "<th>Delete</th>";
+            for (User ul : userList) {
+                list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
+                        + "</td><td><input type=\"checkbox\" value=\"Delete\"></td></tr>";
+            }
+            list += "</table>";
+        }
 %>
 
 <jsp:include page="/header.jsp" />
 
-
 <html>
     <head>
-
         <style>
 table, th, td {
 border: 1px solid black;
@@ -38,38 +67,10 @@ border-collapse: collapse;
             <input type="submit" name="submitUsers" value="Search Users">
             <br/>
         </form>
-        <table style="width:100%">
-            <tr>
-                <th>Username</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Delete</th>
 
-
-            </tr>
-
-            <tr>
-                <td>user1</td>
-                <td>First</td>
-                <td>Last</td>
-                <td><input type="checkbox" value="Delete"></td>		
-            </tr>
-            <tr>
-                <td>user2</td>
-                <td>Stephen</td>		
-                <td>Anthony</td>
-                <td><input type="checkbox" value="Delete"></td>
-            </tr>
-            <tr>
-                <td>user3</td>
-                <td>James</td>		
-                <td>Jones</td>
-                <td><input type="checkbox" value="Delete"></td>
-            </tr>
-
-        </table>
         <div>
             <p><%= result%></p>
+            <p><%= list%></p>
         </div>
     </body>
 </html>
