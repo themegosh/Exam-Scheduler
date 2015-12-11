@@ -14,51 +14,45 @@
     
     
 */    
-    //declarations
-    String result = "";
-    String pageTitle = "Login";
-    
-    if (session.getAttribute("userId") != null){
-        if (request.getParameter("logout") != null) {
-            if (request.getParameter("logout").toString().equalsIgnoreCase("true")){
-                //destroy session data
-                session.invalidate();
-                result += "Logged out.";
-            } else {
-                result += "Already logged in!";
-                response.sendRedirect("Home");
-            }
-        }
+//declarations
+String result = "";
+String pageTitle = "Login";
+
+if (session.getAttribute("userId") != null){
+    if (request.getParameter("logout") != null && request.getParameter("logout").toString().equalsIgnoreCase("true")){
+        //destroy session data
+        session.invalidate();
+        result += "Logged out.";
+    } else {
+        result += "Already logged in!";
+        response.sendRedirect("Home");
     }
-    
-    //albert comment
-    if (request.getParameter("submit") != null) { //POST form submission
-        
-        //some implementation of a user object
-        //try to log in using the parameters, i assume something like this:
-        
-        try {
-            User user = new User(request.getParameter("username"), request.getParameter("password"));
-            
-            session.setAttribute("userId", String.valueOf(user.getId()));
-            session.setAttribute("firstName", user.getFirstName());
-            session.setAttribute("lastName", user.getLastName());
-            session.setAttribute("accessLevel", String.valueOf(user.getAccessLevel()));
-            
-            result += "Logged in Successfully!";
-            response.sendRedirect("Home");
-        }
-        catch (UserException e){
-            StringWriter errors = new StringWriter();
-            e.printStackTrace(new PrintWriter(errors));
-            result += "A login error occurred: " + e.getMessage();
-        }
-        
-    } else { //GET
-        
-        
-        
+}
+
+//albert comment
+if (request.getParameter("submit") != null) { //POST form submission
+
+    //some implementation of a user object
+    //try to log in using the parameters, i assume something like this:
+
+    try {
+        User user = new User(request.getParameter("username"), request.getParameter("password"));
+
+        session.setAttribute("userId", String.valueOf(user.getId()));
+        session.setAttribute("firstName", user.getFirstName());
+        session.setAttribute("lastName", user.getLastName());
+        session.setAttribute("accessLevel", String.valueOf(user.getAccessLevel()));
+
+        result += "Logged in Successfully!";
+        response.sendRedirect("Home");
     }
+    catch (UserException e){
+        StringWriter errors = new StringWriter();
+        e.printStackTrace(new PrintWriter(errors));
+        result += "A login error occurred: " + e.getMessage();
+    }
+
+}
 %>
 
 <!-- place the header HTML code in header.jsp -->

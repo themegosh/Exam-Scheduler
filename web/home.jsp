@@ -25,7 +25,7 @@ if (session.getAttribute("userId") != null){
         <div id="contentStrip_InnerContainer">
             <div id="contentStrip_InnerContainer_Header">
                 <span id="contentStrip_InnerContainerHeaderFont">
-                    Welcome Back <%= firstName %> <%= lastName %>
+                    Welcome Back, <%= firstName %> <%= lastName %>
                 </span>
             </div>
         </div>
