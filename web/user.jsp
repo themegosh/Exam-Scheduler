@@ -41,13 +41,18 @@
         }
     }
     result += "<table>" +
-    "<th>User ID</th><th>Password</th><th>First Name</th><th>Last Name</th><th>Access Level</th>" +
-    "<tr>" +
-    "<td><input type=\"number\" name=\"user_id\" form=\"form\" placeholder=\""+ id +"\" "+ disable +"></td>" +
-    "<td><input type=\"text\" name=\"password\" form=\"form\" placeholder=\"\"></td>" +
-    "<td><input type=\"text\" name=\"first_name\" form=\"form\" placeholder=\""+ firstName +"\"></td>" +
-    "<td><input type=\"text\" name=\"last_name\" form=\"form\" placeholder=\""+ lastName +"\"></td>" +   
-    "<td><input type=\"text\" name=\"access_level\" form=\"form\" placeholder=\""+ access +"\" "+ disable +"></td>" +
+    "<tr><td>User ID</td>" +
+    "<td><input type=\"number\" name=\"user_id\" form=\"form\" placeholder=\""+ id +"\" "+ disable +"></td></tr>" +
+    "<tr><td>First Name</td>" +
+    "<td><input type=\"text\" name=\"first_name\" form=\"form\" placeholder=\""+ firstName +"\"></td></tr>" +
+    "<tr><td>Last Name</td>" +
+    "<td><input type=\"text\" name=\"last_name\" form=\"form\" placeholder=\""+ lastName +"\"></td></tr>" +  
+    "<tr><td>New Password</td>" +
+    "<td><input type=\"text\" name=\"password\" form=\"form\" placeholder=\"\"></td></tr>" +
+    "<tr><td>Confirm Password</td>" +
+    "<td><input type=\"text\" name=\"password2\" form=\"form\" placeholder=\"\"></td></tr>" +
+    "<tr><td>Access Level</td>" +
+    "<td><input type=\"text\" name=\"access_level\" form=\"form\" placeholder=\""+ access +"\" "+ disable +"></td></tr>" +
     "</table>";
     
     if (session.getAttribute("userId") != null){
