@@ -78,7 +78,7 @@
     <body>
         <header>
             <div id="divMainContainer">
-                <img src="HumberLogo.png" alt="Humber Logo" height="42" width="150">
+                <img src="/humberLogo.png" alt="Humber Logo" height="42" width="150">
                 <h1>Admin Home</h1>
                 <div id="tabs">
                     <ul>

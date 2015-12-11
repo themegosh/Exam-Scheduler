@@ -14,7 +14,6 @@
     //test123 - marten
 %>
 
-
 <jsp:include page="/header.jsp" />
 <% //if username is an admin display this: %>
 <div id="contentContainer">

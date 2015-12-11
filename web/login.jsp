@@ -1,4 +1,5 @@
 <%@ page import="humber.exam.library.*, java.io.*, java.util.*" %>
+        <link rel="stylesheet" href="css/style.css">
 
 <%
 /*
@@ -56,7 +57,8 @@
 %>
 
 <!-- place the header HTML code in header.jsp -->
-<jsp:include page="/header.jsp" />
+
+
 <div id="divContainer">
     <h1>Login</h1>
     <div id="divLogin">
