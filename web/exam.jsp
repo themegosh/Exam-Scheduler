@@ -36,6 +36,12 @@
                                         <td>User ID:</td>
                                         <td><input type="text" name="userID" /></td>
                                     </tr>
+                                    
+                                    <tr>
+                                        <td>Teacher:</td>
+                                        <td><input type="text" name="teacher" /></td>
+                                    </tr>
+                                    
 
                                     <tr>
                                         <td>Date:</td>
