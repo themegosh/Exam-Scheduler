@@ -79,4 +79,3 @@
     <p><%= result %></p>
 </div>
 <!-- place the footer HTML code in footer.jsp -->
-<jsp:include page="/footer.jsp" />
