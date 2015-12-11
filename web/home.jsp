@@ -9,54 +9,26 @@
     - Implement validation and descriptive error handling.
     
 */
-    
-    //this page will dynamically list menus to the user
-    //test123 - marten
+String firstName = "";
+String lastName = "";
+
+if (session.getAttribute("userId") != null){
+    firstName = session.getAttribute("firstName").toString();
+    lastName = session.getAttribute("lastName").toString();
+} 
 %>
 
 <jsp:include page="/header.jsp" />
 <% //if username is an admin display this: %>
 <div id="contentContainer">
-	
-	<!-- -->
-	<div id="contentStrip">
-		<!-- -->
-		<div id="contentStrip_InnerContainer">
-			<!-- -->
-			<div id="contentStrip_InnerContainer_Header">
-				<!-- -->
-				<span id="contentStrip_InnerContainerHeaderFont">
-					Welcome Back
-				</span>
-			</div>
-			<!-- -->
-			<div id="contentStrip_InnerContainer_Body">
-				<!-- -->
-				<a href="" >
-					<button id="contentStrip_InnerContainer_BodyButtons">
-						Search All Exams
-					</button>
-				</a>
-				<!-- -->
-				<a href="">
-					<button id="contentStrip_InnerContainer_BodyButtons">
-						Create New Exam
-					</button>
-				</a>
-				<!-- -->
-				<a href="">
-					<button id="contentStrip_InnerContainer_BodyButtons" style="margin-bottom:15px;">
-						Search Users
-					</button>
-				</a>
-			</div>
-		</div>
-	</div>
-	
+    <div id="contentStrip">
+        <div id="contentStrip_InnerContainer">
+            <div id="contentStrip_InnerContainer_Header">
+                <span id="contentStrip_InnerContainerHeaderFont">
+                    Welcome Back <%= firstName %> <%= lastName %>
+                </span>
+            </div>
+        </div>
+    </div>
 </div>
-
-<% //else if the username is a standard user display this: %>
-
-
-
 <jsp:include page="/footer.jsp" />
