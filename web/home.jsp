@@ -1,3 +1,4 @@
+<%@ page import="humber.exam.library.*, java.io.*, java.util.*" %>
 <%
 /*
     ExamScheduler - Nov, 2015
@@ -11,10 +12,12 @@
 */
 String firstName = "";
 String lastName = "";
+String access = "";
 
 if (session.getAttribute("userId") != null){
     firstName = session.getAttribute("firstName").toString();
     lastName = session.getAttribute("lastName").toString();
+    access = AccessLevel.values()[Integer.valueOf(session.getAttribute("accessLevel").toString())].name();
 } 
 %>
 
@@ -26,6 +29,7 @@ if (session.getAttribute("userId") != null){
             <div id="contentStrip_InnerContainer_Header">
                 <span id="contentStrip_InnerContainerHeaderFont">
                     Welcome Back, <%= firstName %> <%= lastName %>
+                    <p>Access Level: <%= access %></p>
                 </span>
             </div>
         </div>

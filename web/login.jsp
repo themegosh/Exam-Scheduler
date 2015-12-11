@@ -1,6 +1,4 @@
 <%@ page import="humber.exam.library.*, java.io.*, java.util.*" %>
-        <link rel="stylesheet" href="css/style.css">
-
 <%
 /*
     ExamScheduler - Nov, 2015
