@@ -15,6 +15,16 @@
         <servlet-class>Exam</servlet-class>
         <jsp-file>/exam.jsp</jsp-file>
     </servlet>
+      <servlet>
+        <servlet-name>Program</servlet-name>
+        <servlet-class>Program</servlet-class>
+        <jsp-file>/program.jsp</jsp-file>
+    </servlet>
+      <servlet>
+        <servlet-name>Programs</servlet-name>
+        <servlet-class>Programs</servlet-class>
+        <jsp-file>/programs.jsp</jsp-file>
+    </servlet>
     <servlet>
         <servlet-name>Users</servlet-name>
         <servlet-class>Users</servlet-class>
@@ -72,6 +82,14 @@
      <servlet-mapping>
         <servlet-name>Course</servlet-name>
         <url-pattern>/Course</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>Program</servlet-name>
+        <url-pattern>/Program</url-pattern>
+    </servlet-mapping>
+      <servlet-mapping>
+        <servlet-name>Programs</servlet-name>
+        <url-pattern>/Programs</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
