@@ -1,8 +1,17 @@
-<%-- 
-    Document   : settings
-    Created on : 11-Dec-2015, 4:44:45 PM
-    Author     : Al
---%>
+<%@ page import="humber.exam.database.*, humber.exam.library.*" %>
+<%
+/*
+    ExamScheduler - Nov, 2015
+    Humber College - Computer Programmer
+    Obj-Oriented Analysis & Design - CPAN-205-0NB
+    
+    TODO for this file:
+    - edit an exam schedule here
+    
+*/
+    
+%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <jsp:include page="/header.jsp" />
