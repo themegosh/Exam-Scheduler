@@ -19,7 +19,7 @@
     String result = "";
     
     Users u = new Users();
-    ArrayList<User> userList;
+    ArrayList<User> userList = new ArrayList();
     String list = "", disable = "disabled";
     
     if (session.getAttribute("userId") != null && session.getAttribute("accessLevel").equals("1")){
@@ -28,7 +28,14 @@
     
     int id=0;
     String firstName="", lastName="", access="";
-    userList = u.getUserById(Integer.parseInt(request.getParameter("id")));
+     if (session.getAttribute("userId") != null){
+        if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
+            userList = u.getUserById(Integer.parseInt(session.getAttribute("userId").toString()));
+        } else { //admin
+            userList = u.getUserById(Integer.parseInt(request.getParameter("id")));
+        }
+    }
+     
     for (User ul : userList) {
         id = ul.getId();
         firstName = ul.getFirstName();
@@ -58,8 +65,14 @@
     if (session.getAttribute("userId") != null){
         if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
             result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
+//            result +="<form form=\"form\" action=\"User?id="+Integer.valueOf(session.getAttribute("userId").toString())+ " method=\"post\">"
+//                    + "<input type=\"submit\" name=\"EditUser\" value=\"Edit User\"> "
+//                    + "</form>";
         } else { //admin
             result +="<a href='./User?id="+request.getParameter("id")+"'>Edit User</a>";
+//            result +="<form form=\"form\" action=\"User?id="+request.getParameter("id")+ " method=\"post\">"
+//                    + "<input type=\"submit\" name=\"EditUser\" value=\"Edit User\"> "
+//                    + "</form>";
         }
     }
 %>
