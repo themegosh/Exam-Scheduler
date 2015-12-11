@@ -1,4 +1,4 @@
-<%
+<%! String username=session.getAttribute("username"); %>
 /*
     ExamScheduler - Nov, 2015
     Humber College - Computer Programmer
@@ -9,9 +9,18 @@
     - Implement validation and descriptive error handling.
     
 */
-    
+  
+
+
 %>
 
 <jsp:include page="/header.jsp" />
+
+ <table>
+        <tr>
+            <td>Username: </td><td> <input type="text" value="<%=username %>" /> </td>
+        </tr>
+
+    </table>
 Single user editing 
 <jsp:include page="/footer.jsp" />
