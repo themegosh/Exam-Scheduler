@@ -11,8 +11,6 @@
     -- make this the Google Search of Users
 */
 
-    
-    String result = "";
         Users u = new Users();
         ArrayList<User> userList;
         String list = "";
@@ -27,7 +25,7 @@
                         + "<th>Delete</th>";
                 for (User ul : userList) {
                     list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
-                            + "</td><td><input type=\"checkbox\" value=\"Delete\"></td></tr>";
+                            + "</td><td><button form=\"editForm\" type=\"submit\" name=\"Edit\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
                 }
                 list += "</table>";
             }else{
@@ -42,7 +40,7 @@
                     + "<th>Delete</th>";
             for (User ul : userList) {
                 list += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
-                        + "</td><td><input type=\"checkbox\" value=\"Delete\"></td></tr>";
+                        + "</td><td><button form=\"editForm\" type=\"submit\" name=\"Edit\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
             }
             list += "</table>";
         }
@@ -69,9 +67,9 @@ border-collapse: collapse;
         </form>
 
         <div>
-            <p><%= result%></p>
             <p><%= list%></p>
         </div>
+        <form action="User" method="get" id="editForm"></form>
     </body>
 </html>
 <jsp:include page="/footer.jsp" />
