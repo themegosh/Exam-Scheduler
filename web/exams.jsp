@@ -1,7 +1,10 @@
-<%@ page import="humber.exam.library.*" %>
+<%@ page import="humber.exam.database.*" %>
 <%@ page import="java.io.*" %>
 
 <%
+    //DatabaseConnection conn = DatabaseConnection.open();
+    //conn.getExam(room_num, period_id, day_of_week);
+    
 /*
     ExamScheduler - Nov, 2015
     Humber College - Computer Programmer
