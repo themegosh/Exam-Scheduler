@@ -12,99 +12,64 @@
 %>
 
 <jsp:include page="/header.jsp" />
-Adding/viewing Exam Content
 
 <% //the user adds exams here: %>
 
 <div id="contentContainer">
-	
-	<!-- -->
+
 	<div id="contentStrip">
-		<!-- -->
 		<div id="contentStrip_InnerContainer">
-			<!-- -->
 			<div id="contentStrip_InnerContainer_Header">
-				<!-- -->
 				<span id="contentStrip_InnerContainerHeaderFont">
 					User Home
 				</span>
 			</div>
-			<!-- -->
 			<div id="contentStrip_InnerContainer_Body">
-				<!-- -->
 				<form>
-						<table>
-    						<tr>
-      							<td align="right">Semester:</td>
-      							<td align="left"><input type="text" name="semester" /></td>
-   						    </tr>
-    						<tr>
-      							<td align="right">Program:</td>
-      							<td align="left"><input type="text" name="program" /></td>
-    						</tr>
-    						<tr>
-      							<td align="right">Course:</td>
-     						    <td align="left"><input type="text" name="course" /></td>
-    						</tr>
-    						<tr>
-      							<td align="right">Date:</td>
-     						    <td align="left"><input type="date" name="date"></td>
-    						</tr>
-    						<tr>
-      							<td align="right">Start Time:</td>
-     						    <td align="left"><input type="time" name="start_time"></td>
-    						</tr>
-    						<tr>
-      							<td align="right">End Time:</td>
-     						    <td align="left"><input type="time" name="end_time"></td>
-    						</tr>
-    					
-  						</table>
-					
-						<br>
-						What Kind of Exam are you Scheduling?
-					
-							<br>
-  							<div id="radio">
-    <input type="radio" id="radio1" name="radio"><label for="radio1">Final</label>
-    <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Midterm</label>
-    
-  
-  							<br>
-					
-					
-						<br>
-					What Kind of Room do you Need?
-					
-						<br>
-  						
-    <input type="radio" id="radio3" name="radio0"><label for="radio3">Lab</label>
-    <input type="radio" id="radio4" name="radio0"><label for="radio4">Classroom</label>
-    <input type="radio" id="radio5" name="radio0"><label for="radio5">Either</label>
-  </div>
-  						<br>
-  						<br>	
-      				Room:
-      					<select>
-  							<option value="room1">Room1</option>
-  							<option value="room2">Room2</option>
-  							<option value="room3">Room3</option>
-  							<option value="room4">Room4</option>
-						</select>
+                                    <table>
+                                    <tr>
+                                        <td>Course Code:</td>
+                                        <td><input type="text" name="courseCode" /></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>User ID:</td>
+                                        <td><input type="text" name="userID" /></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Start Time:</td>
+                                        <td><input type="time" name="start_time"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>End Time:</td>
+                                        <td><input type="time" name="end_time"></td>
+                                    </tr>
+
+                                    
+                                    <tr>
+                                        <td>Room:</td> 
+                                        <td><select>
+                                            <option value="room1">Room1</option>
+                                            <option value="room2">Room2</option>
+                                            <option value="room3">Room3</option>
+                                            <option value="room4">Room4</option>
+                                            </select>
+                                        </td>
 						<br>
 						<br>
-					
+                                    </tr>
+                                                                                    </table>
+
 					</form> 
-					<br>
-					<br>
+					<br/>
+					<br/>
 					<input type="submit" value="Submit">
-					
-				
-				</a>
 			</div>
 		</div>
 	</div>
 	
 </div>
 
-<jsp:include page="/footer.jsp" />
+<!--<jsp:include page="/footer.jsp" /> -->

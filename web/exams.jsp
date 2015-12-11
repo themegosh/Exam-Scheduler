@@ -1,5 +1,7 @@
-<%@ page import="humber.exam.database.*" %>
+<%@ page import="humber.exam.database.*, humber.exam.library.*" %>
 <%@ page import="java.io.*" %>
+<%@page import="java.util.ArrayList"%>
+
 
 <%
     //DatabaseConnection conn = DatabaseConnection.open();
@@ -13,10 +15,16 @@
     //declarations
     String result = "Testing! ";
     String pageTitle = "Exam Timetable";
+    ArrayList<Exam> examList;
+    String list = "";
+
+
     
     //albert comment
-    if (request.getParameter("search") != null) { //POST form submission
-        result = "It works!";
+    if (request.getParameter("search") != null && !request.getParameter("searchText").equals("")) { 
+
+        result = "Searching for: " + request.getParameter("searchText");
+        //NEED DATABASE TO SEARCH
     }     
 %>
 <jsp:include page="/header.jsp" />

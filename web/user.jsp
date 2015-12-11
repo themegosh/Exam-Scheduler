@@ -2,7 +2,7 @@
 <%@page import="humber.exam.library.User"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="humber.exam.library.Users"%>
-<%
+
 /*
     ExamScheduler - Nov, 2015
     Humber College - Computer Programmer
@@ -13,8 +13,8 @@
     - Implement validation and descriptive error handling.
     
 */
-    
-//[User Id, password, first name, access level: admin] [password, first name, last name: teacher]
+
+<%   
     String result = "";
     Users u = new Users();
     ArrayList<User> userList;
@@ -63,4 +63,5 @@ border-collapse: collapse;
         <%= result %>
     </body>
 </html>
+
 <jsp:include page="/footer.jsp" />

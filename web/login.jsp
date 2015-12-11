@@ -19,9 +19,14 @@
     String pageTitle = "Login";
     
     if (session.getAttribute("userId") != null){
-        result += "Already logged in!";
-        //String redirectURL = "http://whatever.com/myJSPFile.jsp";
-        response.sendRedirect("Home");
+        if (request.getParameter("logout").toString().equalsIgnoreCase("true")){
+            //destroy session data
+            session.invalidate();
+            result += "<h3>Logged out.</h3>";
+        } else {
+            result += "Already logged in!";
+            response.sendRedirect("Home");
+        }
     }
     
     //albert comment
@@ -48,16 +53,13 @@
         
     } else { //GET
         
-        if (request.getParameter("logout") == "true"){
-            //destroy session data
-            result += "<h3>Logged out.</h3>";
-        }
+        
         
     }
 %>
 
 <!-- place the header HTML code in header.jsp -->
-
+<jsp:include page="/header.jsp" />
 
 <div id="divContainer">
     <h1>Login</h1>
@@ -78,4 +80,6 @@
     <!--- This is where the result div will appear --->
     <p><%= result %></p>
 </div>
+
 <!-- place the footer HTML code in footer.jsp -->
+<jsp:include page="/footer.jsp" />

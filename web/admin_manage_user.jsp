@@ -1,62 +1,9 @@
 <!DOCTYPE html>
+<jsp:include page="/header.jsp" />
 <html>
 
 <head>
 <title>Manage User</title>
-<style>
-	body{
-		background:#fff;
-	}
-	#main_container{
-		width: 960px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#header{
-		position:relative;
-		
-	}
-	#header #navigation{
-		position: absolute;
-		top:50px;
-		left:400px;
-	}
-	#navigation ul li{
-		float:left;
-		list-style: none;
-		margin-left: 10px
-	}
-
-	#navigation ul li a{
-		
-		display: block;
-		width:110px;
-
-		text-align: center;
-	}
-
-
-	#user_list{
-
-		position:relative;
-		top:70px;
-		background-color:#ffc;
-		
-		
-	}
-	#manage_user{
-		position:relative;
-		top:70px;
-		background-color:#ffc;
-	} 
-
-	table, th, td{
-		border:1px solid black;
-		border-collapse: collapse;
-		padding: 5px
-	}
-
-</style>
 
 </head>
 
