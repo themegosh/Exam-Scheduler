@@ -20,17 +20,20 @@
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
                 + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>User Settings</a></li>";
         } else { //admin
-            
+            menu += "<li><a href='./Home'>Home</a></li>"
+                + "<li><a href='./Exams'>Search Exams</a></li>"
+                + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
+                    + "<li><a href='./Users'>Search Users</a></li>"
+                + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Personal Settings</a></li>";
         }
         menu += "<li><a href='./Login?logout=true'>Log Out</a></li>"; //log out always shown
     } else { //not logged in
-        if (request.getParameter("logout") != null){ 
-            if (request.getParameter("logout").equalsIgnoreCase("true")){
-                //destroy session data
-                System.out.println(request.getRequestURL());
-            }
+        if (request.getParameter("logout") != null && request.getParameter("logout").equalsIgnoreCase("true")){
+            //destroy session data
+            System.out.println(request.getRequestURL());
+        } else {
+            response.sendRedirect("/Login");
         }
-        //response.sendRedirect("/Login");
     }
    
     
