@@ -30,6 +30,16 @@
         <servlet-class>Home</servlet-class>
         <jsp-file>/home.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <servlet-name>Courses</servlet-name>
+        <url-pattern>/Courses</url-pattern>
+        <jsp-file>/courses.jsp</jsp-file>
+    </servlet>
+     <servlet>
+        <servlet-name>Course</servlet-name>
+        <url-pattern>/Course</url-pattern>
+        <jsp-file>/course.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Exams</servlet-name>
         <url-pattern>/Exams</url-pattern>
@@ -54,6 +64,14 @@
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Courses</servlet-name>
+        <url-pattern>/Courses</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>Course</servlet-name>
+        <url-pattern>/Course</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
