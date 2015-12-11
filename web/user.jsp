@@ -66,14 +66,18 @@
         if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
             //result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
             result +="<form id=\"form\" action=\"User?id="+Integer.valueOf(session.getAttribute("userId").toString())+ "\" method=\"post\">"
-                    + "<input type=\"submit\" name=\"EditUser\" value=\"Edit User\"> "
+                    + "<input type=\"submit\" name=\"editBtn\" value=\"Edit User\"> "
                     + "</form>";
         } else { //admin
             //result +="<a href='./User?id="+request.getParameter("id")+"'>Edit User</a>";
             result +="<form id=\"form\" action=\"User?id="+request.getParameter("id")+ "\" method=\"post\">"
-                    + "<input type=\"submit\" name=\"EditUser\" value=\"Edit User\"> "
+                    + "<input type=\"submit\" name=\"editBtn\" value=\"Edit User\"> "
                     + "</form>";
         }
+    }
+    
+    if (request.getParameter("editBtn")!=null){
+        result += "User details changed.";
     }
 %>
 
