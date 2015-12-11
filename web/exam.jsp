@@ -38,13 +38,18 @@
                                     </tr>
 
                                     <tr>
+                                        <td>Date:</td>
+                                        <td><input type="date" name="date" value="2015-01-01"></td>
+                                    </tr>
+                                    
+                                    <tr>
                                         <td>Start Time:</td>
-                                        <td><input type="time" name="start_time"></td>
+                                        <td><input type="time" name="start_time" value="00:00:00"></td>
                                     </tr>
 
                                     <tr>
                                         <td>End Time:</td>
-                                        <td><input type="time" name="end_time"></td>
+                                        <td><input type="time" name="end_time" value="23:59:00"></td>
                                     </tr>
 
                                     
