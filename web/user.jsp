@@ -48,9 +48,9 @@
     "<tr><td>Last Name</td>" +
     "<td><input type=\"text\" name=\"last_name\" form=\"form\" placeholder=\""+ lastName +"\"></td></tr>" +  
     "<tr><td>New Password</td>" +
-    "<td><input type=\"text\" name=\"password\" form=\"form\" placeholder=\"\"></td></tr>" +
+    "<td><input type=\"password\" name=\"password\" form=\"form\" placeholder=\"\"></td></tr>" +
     "<tr><td>Confirm Password</td>" +
-    "<td><input type=\"text\" name=\"password2\" form=\"form\" placeholder=\"\"></td></tr>" +
+    "<td><input type=\"password\" name=\"password2\" form=\"form\" placeholder=\"\"></td></tr>" +
     "<tr><td>Access Level</td>" +
     "<td><input type=\"text\" name=\"access_level\" form=\"form\" placeholder=\""+ access +"\" "+ disable +"></td></tr>" +
     "</table>";
@@ -59,7 +59,7 @@
         if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
             result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
         } else { //admin
-            result +="<a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Edit User</a>";
+            result +="<a href='./User?id="+request.getParameter("id")+"'>Edit User</a>";
         }
     }
 %>

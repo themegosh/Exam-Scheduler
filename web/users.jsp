@@ -42,8 +42,9 @@
                     + "<th>Delete</th>";
             for (User ul : userList) {
                 result += "<tr><td>" + ul.getId() + "</td><td>" + ul.getFirstName() + "</td><td>" + ul.getLastName()
-                        + "</td><td><button form=\"editForm\" type=\"submit\" name=\"id\" value=\"" + ul.getId() + "\">Edit</button></td></tr>";
-            }
+                        + "</td><td><a href='./User?id=" +ul.getId()+ "'>Edit User</a></td></tr>";
+            }           
+            //session.setAttribute("EditUser", ul.getId())
             result += "</table>";
         }
     }else{
