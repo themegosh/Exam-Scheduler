@@ -22,8 +22,17 @@
     ArrayList<User> userList = new ArrayList();
     String list = "", disable = "disabled";
     
-    if (session.getAttribute("userId") != null && session.getAttribute("accessLevel").equals("1")){
-        disable = "";
+    //if logged in
+    if (session.getAttribute("userId") == null){
+        response.sendRedirect("./Login");
+    } else {
+        if (session.getAttribute("accessLevel").equals("1")) { //admin
+            disable = "";
+        } else { //user
+            if (!request.getParameter("id").equals(session.getAttribute("userId"))){
+                response.sendRedirect("./Home"); //dont let them change other users
+            }
+        }
     }
     
     int id=0;
