@@ -20,7 +20,7 @@
     
     Users u = new Users();
     ArrayList<User> userList = new ArrayList();
-    String list = "", disable = "disabled";
+    String list = "", disable = "disabled", editUser="";
     
     //if logged in
     if (session.getAttribute("userId") == null){
@@ -41,7 +41,12 @@
         if (Integer.valueOf(session.getAttribute("accessLevel").toString()) == 0) { // a user
             userList = u.getUserById(Integer.parseInt(session.getAttribute("userId").toString()));
         } else { //admin
-            userList = u.getUserById(Integer.parseInt(request.getParameter("id")));
+            if (!request.getParameter("id").equals("new")){
+                userList = u.getUserById(Integer.parseInt(request.getParameter("id")));
+                editUser="Edit User";
+            }else{
+                editUser="Add New User";
+            }
         }
     }
      
@@ -80,13 +85,17 @@
         } else { //admin
             //result +="<a href='./User?id="+request.getParameter("id")+"'>Edit User</a>";
             result +="<form id=\"form\" action=\"User?id="+request.getParameter("id")+ "\" method=\"post\">"
-                    + "<input type=\"submit\" name=\"editBtn\" value=\"Edit User\"> "
+                    + "<input type=\"submit\" name=\"editBtn\" value=\""+editUser+"\"> "
                     + "</form>";
         }
     }
     
     if (request.getParameter("editBtn")!=null){
-        result += "User details changed.";
+        if (request.getParameter("id").equals("new")){
+            result += "New user added";
+        }else{
+            result += "User details changed.";
+        }
     }
 %>
 
