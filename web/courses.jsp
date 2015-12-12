@@ -17,6 +17,13 @@
     String pageTitle = "Courses";
     ArrayList<Course> courseList;
     String list = "";
+    
+    //redirect to Login if theyre not logged in
+    if (session.getAttribute("userId") != null){
+        
+    } else {
+        response.sendRedirect("./Login");
+    }
 
 
     

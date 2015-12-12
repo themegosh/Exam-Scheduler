@@ -34,6 +34,13 @@ if (request.getParameter("submit") != null) { //POST form submission
 }    
 */    
     
+    //redirect to Login if theyre not logged in
+    if (session.getAttribute("userId") != null){
+        
+    } else {
+        response.sendRedirect("./Login");
+    }
+    
 %>
 
 <jsp:include page="/header.jsp" />

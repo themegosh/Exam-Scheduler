@@ -32,7 +32,7 @@
     } else { //not logged in
         if (request.getParameter("logout") != null && request.getParameter("logout").equalsIgnoreCase("true")){
             //destroy session data
-            System.out.println(request.getRequestURL());
+            //System.out.println(request.getRequestURL());
         } else {
             response.sendRedirect("/Login");
         }

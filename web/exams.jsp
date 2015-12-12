@@ -18,7 +18,12 @@
     ArrayList<Exam> examList;
     String list = "";
 
-
+    //redirect to Login if theyre not logged in
+    if (session.getAttribute("userId") != null){
+        
+    } else {
+        response.sendRedirect("./Login");
+    }
     
     //albert comment
     if (request.getParameter("search") != null && !request.getParameter("searchText").equals("")) { 

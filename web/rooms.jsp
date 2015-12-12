@@ -18,6 +18,12 @@
     ArrayList<Room> roomList;
     String list = "";
 
+    //redirect to Login if theyre not logged in
+    if (session.getAttribute("userId") != null){
+        
+    } else {
+        response.sendRedirect("./Login");
+    }
     
     //albert comment
     if (request.getParameter("save") != null && !request.getParameter("save").equals("")) { 

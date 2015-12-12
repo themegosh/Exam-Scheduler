@@ -48,7 +48,7 @@
             result += "</table>";
         }
     }else{
-        result = "Not logged in.";
+        response.sendRedirect("./Login"); //Not logged in
     }
 %>
 
