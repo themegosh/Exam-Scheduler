@@ -63,7 +63,7 @@
     }
     result += "<table>" +
     "<tr><td>User ID</td>" +
-    "<td><input type=\"number\" name=\"user_id\" form=\"form\" placeholder=\"\" value=\""+ id +"\" disabled></td></tr>" +
+    "<td><input type=\"number\" name=\"user_id\" form=\"form\" placeholder=\"\" value=\""+ id +"\""+ disable+"></td></tr>" +
     "<tr><td>First Name</td>" +
     "<td><input type=\"text\" name=\"first_name\" form=\"form\" placeholder=\"\" value=\""+ firstName +"\"></td></tr>" +
     "<tr><td>Last Name</td>" +
