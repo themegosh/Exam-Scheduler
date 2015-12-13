@@ -19,15 +19,15 @@
                 + "<li><a href='./Exams'>Search Exams</a></li>"
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
                 + "<li><a href='./Week'>Exam Schedule</a></li>"
-                + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>User Settings</a></li>";
+                + "<li><a href='./User?id="+session.getAttribute("userId")+"'>User Settings</a></li>";
         } else { //admin
             menu += "<li><a href='./Home'>Home</a></li>"
                 + "<li><a href='./Exams'>Search Exams</a></li>"
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
                 + "<li><a href='./Users'>Search Users</a></li>"
                 + "<li><a href='./Week'>Exam Schedule</a></li>"
-                + "<li><a href='./User?id="+Integer.valueOf(session.getAttribute("userId").toString())+"'>Personal Settings</a></li>"
-              + "<li><a href='./Settings'>Settings</a></li>";
+                + "<li><a href='./User?id="+session.getAttribute("userId")+"'>Personal Settings</a></li>"            
+		+ "<li><a href='./Settings'>Settings</a></li>";
         }
         menu += "<li><a href='./Login?logout=true'>Log Out</a></li>"; //log out always shown
     } else { //not logged in
