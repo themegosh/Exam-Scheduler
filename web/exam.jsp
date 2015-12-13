@@ -60,7 +60,7 @@ if (request.getParameter("submit") != null) { //POST form submission
 				<form>
                                     <table>
                                     <tr>
-                                        <td>Course Code:</td>
+                                        <td><b>Course Code:</b></td>
                                         <td><input type="text" name="courseCode" /></td>
                                     </tr>
 
