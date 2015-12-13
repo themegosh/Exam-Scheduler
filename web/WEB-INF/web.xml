@@ -53,6 +53,10 @@
         <url-pattern>/Exam</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
+        <servlet-name>Exams</servlet-name>
+        <url-pattern>/Exams</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
         <servlet-name>Users</servlet-name>
         <url-pattern>/Users</url-pattern>
     </servlet-mapping>
