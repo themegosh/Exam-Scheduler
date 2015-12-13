@@ -1,63 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
-        <display-name>Login</display-name>
         <servlet-name>Login</servlet-name>
         <jsp-file>/login.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Exams</servlet-name>
-        <servlet-class>Exams</servlet-class>
         <jsp-file>/exams.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Exam</servlet-name>
-        <servlet-class>Exam</servlet-class>
         <jsp-file>/exam.jsp</jsp-file>
     </servlet>
       <servlet>
         <servlet-name>Program</servlet-name>
-        <servlet-class>Program</servlet-class>
         <jsp-file>/program.jsp</jsp-file>
     </servlet>
       <servlet>
         <servlet-name>Programs</servlet-name>
-        <servlet-class>Programs</servlet-class>
         <jsp-file>/programs.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Users</servlet-name>
-        <servlet-class>Users</servlet-class>
         <jsp-file>/users.jsp</jsp-file>
     </servlet>
      <servlet>   
         <servlet-name>Settings</servlet-name>
-        <servlet-class>Settings</servlet-class>
         <jsp-file>/settings.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>User</servlet-name>
-        <servlet-class>User</servlet-class>
         <jsp-file>/user.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Home</servlet-name>
-        <servlet-class>Home</servlet-class>
         <jsp-file>/home.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Courses</servlet-name>
-        <url-pattern>/Courses</url-pattern>
         <jsp-file>/courses.jsp</jsp-file>
     </servlet>
      <servlet>
         <servlet-name>Course</servlet-name>
-        <url-pattern>/Course</url-pattern>
         <jsp-file>/course.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Week</servlet-name>
-        <url-pattern>/Week</url-pattern>
         <jsp-file>/week.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
