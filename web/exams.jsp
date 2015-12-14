@@ -34,12 +34,7 @@
 %>
 <jsp:include page="/header.jsp" />
 
-<style>
-table, th, td {
-border: 1px solid black;
-border-collapse: collapse;
-}
-        </style>
+
 <hr>
 
 <div class="container">
@@ -58,7 +53,7 @@ border-collapse: collapse;
         
             
     <p><%= result %></p>
-           <table class="table table-striped">
+           <table class="table table-hover">
                <thread>
                 <tr>        
                     <th>Semester</th>
