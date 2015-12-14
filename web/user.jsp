@@ -112,6 +112,7 @@ border-collapse: collapse;
 
     <body>
         <hr>
+        <br>
     <center><%= result %></center>
     </body>
 </html>

@@ -66,9 +66,9 @@ border-collapse: collapse;
 
     <body>
         <form action="Users" method="post"> 
-            Find a User
+            <center>Find a User
             <input type="text" name="search" >
-            <input type="submit" name="submitUsers" value="Search Users">
+            <input type="submit" name="submitUsers" value="Search Users"></center>
             <br/>
         </form>
 

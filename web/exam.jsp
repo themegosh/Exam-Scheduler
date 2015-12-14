@@ -57,7 +57,7 @@ if (request.getParameter("submit") != null) { //POST form submission
 				</span>
 			</div>
 			<div id="contentStrip_InnerContainer_Body">
-				<form>
+                            <center><form>
                                     <table>
                                     <tr>
                                         <td>Course Code:</td>
@@ -105,7 +105,7 @@ if (request.getParameter("submit") != null) { //POST form submission
                                     </tr>
                                                                                     </table>
 
-					</form> 
+                                </form> </center>
 					<br/>
 					<br/>
                                         <center><input type="submit" value="Submit"></center>
