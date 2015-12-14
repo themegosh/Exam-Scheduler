@@ -100,13 +100,15 @@ if (request.getParameter("submit") != null) { //POST form submission
 						<br>
 						<br>
                                     </tr>
-                                        </table></div>
+                                        </table>
 
                                 </form> </center>
 					<br/>
-					<br/>
-                                        <center><input type="submit" value="Submit"></center></p>
-      </div>
+					
+                                        <center><input type="submit" value="Submit" class="btn btn-info"></center></p>
+</div> 
+                  
+</div>
 
                         </div>
 			

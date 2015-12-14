@@ -51,7 +51,7 @@ border-collapse: collapse;
         
             <input type="text" name="searchText" value="">
             
-            <input type="submit" name="search" value="Search"><br>            
+            <input type="submit" name="search" class="btn btn-info" value="Search"><br>            
         </form></p>
       
 

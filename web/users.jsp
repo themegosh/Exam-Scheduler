@@ -73,14 +73,14 @@ border-collapse: collapse;
         <p class="lead"><form action="Users" method="post"> 
             <center>
             <input type="text" name="search" >
-            <input type="submit" name="submitUsers" value="Search Users"></center>
+            <input type="submit" name="submitUsers" value="Search Users" class="btn btn-info"></center>
             <br/>
         </form></p>
       
         
 
         <div>
-            <div class="well well-lg"><p><%= result%></p></div>
+            <div class="well well-lg"><p><table class="table table-striped"><%= result%></table></p></div>
         </div>
         <form action="User" method="get" id="editForm"></form>
         

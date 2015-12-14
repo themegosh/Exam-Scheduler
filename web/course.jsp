@@ -100,7 +100,7 @@ Adding Course Content
 					</form> 
 					<br>
 					<br>
-					<input type="submit" value="Submit">
+					<input type="submit"  value="Submit" >
 					
 				
 				</a>

@@ -42,7 +42,7 @@ border-collapse: collapse;
     <center><form action="Users" method="post"> 
            
             <input type="text" name="search" >
-            <input type="submit" name="submitUsers" value="Search Users">
+            <input type="submit" name="submitUsers" class="btn btn-info" value="Search Users">
             <br/>
         </form></center>
   </div>
