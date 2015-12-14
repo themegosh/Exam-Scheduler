@@ -26,6 +26,7 @@
 <html>
     <head>
         <style>
+            
 table, th, td {
 border: 1px solid black;
 border-collapse: collapse;
@@ -34,7 +35,7 @@ border-collapse: collapse;
     </head>
 
     <body>
-        <form action="Users" method="post"> 
+    <center><form action="Users" method="post"> </center>
             Find a User
             <input type="text" name="search" >
             <input type="submit" name="submitUsers" value="Search Users">

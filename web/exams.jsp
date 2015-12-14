@@ -36,9 +36,10 @@
 
 
         <form action="Exams" method="post">
+            <hr>
         
-            <input type="text" name="searchText" value="">            
-            <input type="submit" name="search" value="Search"><br>            
+            <center><input type="text" name="searchText" value=""></center>            
+            <center><input type="submit" name="search" value="Search"></center><br>            
         </form>
             
     <p><%= result %></p>
