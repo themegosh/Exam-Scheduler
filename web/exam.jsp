@@ -60,7 +60,7 @@ if (request.getParameter("submit") != null) { //POST form submission
 				<form>
                                     <table>
                                     <tr>
-                                        <td><b>Course Code:</b></td>
+                                        <td>Course Code:</td>
                                         <td><input type="text" name="courseCode" /></td>
                                     </tr>
 
@@ -108,7 +108,8 @@ if (request.getParameter("submit") != null) { //POST form submission
 					</form> 
 					<br/>
 					<br/>
-					<input type="submit" value="Submit">
+                                        <center><input type="submit" value="Submit"></center>
+                                        <br>
 			</div>
 		</div>
 	</div>
