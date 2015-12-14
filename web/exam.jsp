@@ -47,7 +47,7 @@ if (request.getParameter("submit") != null) { //POST form submission
 
 <% //the user adds exams here: %>
 <hr>
-<br>
+
 
 
                     <div class="container">

@@ -36,12 +36,17 @@ border-collapse: collapse;
 
     <body>
         <hr>
+        <div class="container">
+  <div class="jumbotron">
+    <h1>Find a User</h1> 
     <center><form action="Users" method="post"> 
-            Find a User
+           
             <input type="text" name="search" >
             <input type="submit" name="submitUsers" value="Search Users">
             <br/>
         </form></center>
+  </div>
+        </div>
 
         <div>
             <p>TEST</p>

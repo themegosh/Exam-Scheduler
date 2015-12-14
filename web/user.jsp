@@ -113,7 +113,12 @@ border-collapse: collapse;
     <body>
         <hr>
         <br>
+        <div class="container">
+  <div class="jumbotron">
+    <h1>Edit Info</h1> 
     <center><table class="table table-striped table-hover "><%= result %></table></center>
+  </div>
+        </div>
     </body>
 </html>
 

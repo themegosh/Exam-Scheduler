@@ -63,10 +63,15 @@
         });    
         </script>
 
-            
+     <div class="container">
+  <div class="jumbotron">
+    <h1>Exam Schedule</h1>      
+           
     <div id="calendar">
         <!-- Calls the Calendar -->
     </div>
+  </div>
+     </div>
 
 
 
