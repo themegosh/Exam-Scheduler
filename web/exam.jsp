@@ -55,7 +55,7 @@ if (request.getParameter("submit") != null) { //POST form submission
       <div class="jumbotron">
           <h1><right>Add an Exam</right></h1>
           <p><center><form>
-                                    <table>
+                                    <div class="well well-lg"><table class="table table-striped">
                                     <tr>
                                         <td>Course Code:</td>
                                         <td><input type="text" name="courseCode" /></td>
@@ -100,7 +100,7 @@ if (request.getParameter("submit") != null) { //POST form submission
 						<br>
 						<br>
                                     </tr>
-                                                                                    </table>
+                                        </table></div>
 
                                 </form> </center>
 					<br/>

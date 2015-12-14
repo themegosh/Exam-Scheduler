@@ -33,6 +33,13 @@
     }     
 %>
 <jsp:include page="/header.jsp" />
+
+<style>
+table, th, td {
+border: 1px solid black;
+border-collapse: collapse;
+}
+        </style>
 <hr>
 
 <div class="container">
@@ -51,7 +58,8 @@
         
             
     <p><%= result %></p>
-            <table style="width:100%">
+           <table class="table table-striped">
+               <thread>
                 <tr>        
                     <th>Semester</th>
                     <th>Program</th>
@@ -103,6 +111,7 @@
                     <td>Classroom</td>		
                     <td>E417</td>
                 </tr>
+                </tbody>
             </table>
             
             </div>

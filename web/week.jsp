@@ -67,9 +67,9 @@
   <div class="jumbotron">
     <h1>Exam Schedule</h1>      
            
-    <div id="calendar">
+    <div class="well well-lg"><div id="calendar">
         <!-- Calls the Calendar -->
-    </div>
+        </div></div>
   </div>
      </div>
 

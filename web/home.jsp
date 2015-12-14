@@ -30,8 +30,8 @@
         <div id="contentStrip_InnerContainer">
             <div id="contentStrip_InnerContainer_Header">
                 <span id="contentStrip_InnerContainerHeaderFont">
-                    Welcome Back, <%= firstName %> <%= lastName %>
-                    <p>Access Level: <%= access %></p>
+                    <div class="well well-lg">Welcome Back, <%= firstName %> <%= lastName %>
+                        <p>Access Level: <%= access %></p></div>
                 </span>
             </div>
         </div>

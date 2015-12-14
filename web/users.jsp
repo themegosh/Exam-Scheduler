@@ -80,7 +80,7 @@ border-collapse: collapse;
         
 
         <div>
-            <p><%= result%></p>
+            <div class="well well-lg"><p><%= result%></p></div>
         </div>
         <form action="User" method="get" id="editForm"></form>
         
