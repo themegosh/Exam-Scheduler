@@ -46,6 +46,8 @@ if (request.getParameter("submit") != null) { //POST form submission
 <jsp:include page="/header.jsp" />
 
 <% //the user adds exams here: %>
+<hr>
+<br>
 
 
                     <div class="container">

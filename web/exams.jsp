@@ -37,18 +37,16 @@
 
 <div class="container">
 
-      <div class="starter-template">
-          <center><h1>Search for an Exam</h1></center>
+      <div class="jumbotron">
+          <h1>Search for an Exam</h1>
         <p class="lead"><form action="Exams" method="post">
             
         
-            <center><input type="text" name="searchText" value=""></center>
-            <br>
-            <center><input type="submit" name="search" value="Search"></center><br>            
+            <input type="text" name="searchText" value="">
+            
+            <input type="submit" name="search" value="Search"><br>            
         </form></p>
-      </div>
-
-    </div>
+      
 
         
             
@@ -106,6 +104,10 @@
                     <td>E417</td>
                 </tr>
             </table>
+            
+            </div>
+
+    </div>
 
 
 

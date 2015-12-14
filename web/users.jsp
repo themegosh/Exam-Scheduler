@@ -68,7 +68,7 @@ border-collapse: collapse;
         <hr>
         <div class="container">
 
-      <div class="starter-template">
+      <div class="jumbotron">
           <center><h1>Find a User</h1></center>
         <p class="lead"><form action="Users" method="post"> 
             <center>
@@ -76,15 +76,17 @@ border-collapse: collapse;
             <input type="submit" name="submitUsers" value="Search Users"></center>
             <br/>
         </form></p>
-      </div>
-
-    </div>
+      
         
 
         <div>
             <p><%= result%></p>
         </div>
         <form action="User" method="get" id="editForm"></form>
+        
+        </div>
+
+    </div>
     </body>
 </html>
 <jsp:include page="/footer.jsp" />
