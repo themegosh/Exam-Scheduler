@@ -47,17 +47,12 @@ if (request.getParameter("submit") != null) { //POST form submission
 
 <% //the user adds exams here: %>
 
-<div id="contentContainer">
 
-	<div id="contentStrip">
-		<div id="contentStrip_InnerContainer">
-			<div id="contentStrip_InnerContainer_Header">
-				<span id="contentStrip_InnerContainerHeaderFont">
-					User Home
-				</span>
-			</div>
-			<div id="contentStrip_InnerContainer_Body">
-                            <center><form>
+                    <div class="container">
+
+      <div class="jumbotron">
+          <h1><right>Add an Exam</right></h1>
+          <p><center><form>
                                     <table>
                                     <tr>
                                         <td>Course Code:</td>
@@ -108,9 +103,11 @@ if (request.getParameter("submit") != null) { //POST form submission
                                 </form> </center>
 					<br/>
 					<br/>
-                                        <center><input type="submit" value="Submit"></center>
-                                        <br>
-			</div>
+                                        <center><input type="submit" value="Submit"></center></p>
+      </div>
+
+                        </div>
+			
 		</div>
 	</div>
 	
