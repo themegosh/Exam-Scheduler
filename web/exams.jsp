@@ -33,10 +33,10 @@
     }     
 %>
 <jsp:include page="/header.jsp" />
-
+<hr>
 
         <form action="Exams" method="post">
-            <hr>
+            
         
             <center><input type="text" name="searchText" value=""></center>            
             <center><input type="submit" name="search" value="Search"></center><br>            

@@ -113,7 +113,7 @@ border-collapse: collapse;
     <body>
         <hr>
         <br>
-    <center><%= result %></center>
+    <center><table class="table table-striped table-hover "><%= result %></table></center>
     </body>
 </html>
 

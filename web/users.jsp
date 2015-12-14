@@ -65,6 +65,7 @@ border-collapse: collapse;
     </head>
 
     <body>
+        <hr>
         <form action="Users" method="post"> 
             <center>Find a User
             <input type="text" name="search" >

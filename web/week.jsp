@@ -33,6 +33,7 @@
     }
 %>
 <jsp:include page="/header.jsp" />
+<hr>
 
 <script>
         

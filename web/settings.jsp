@@ -35,12 +35,13 @@ border-collapse: collapse;
     </head>
 
     <body>
-    <center><form action="Users" method="post"> </center>
+        <hr>
+    <center><form action="Users" method="post"> 
             Find a User
             <input type="text" name="search" >
             <input type="submit" name="submitUsers" value="Search Users">
             <br/>
-        </form>
+        </form></center>
 
         <div>
             <p>TEST</p>

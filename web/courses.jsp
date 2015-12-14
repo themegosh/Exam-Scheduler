@@ -59,6 +59,7 @@
 </form>
 
     <p><%= result %></p>
+    <hr>
             <table style="width:100%">
                 <tr>        
                     <th>Semester</th>
@@ -73,7 +74,7 @@
                     <td>1</td>
                     <td>CPAN</td>
                     <td>205-0NA</td>		
-                    <td>Alireza</td>
+                    <td><center>Alireza</center></td>
                     <td>2015/12/14</td>
                     <td>J130</td>
                 </tr>
