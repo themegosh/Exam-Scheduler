@@ -66,12 +66,20 @@ border-collapse: collapse;
 
     <body>
         <hr>
-        <form action="Users" method="post"> 
-            <center>Find a User
+        <div class="container">
+
+      <div class="starter-template">
+          <center><h1>Find a User</h1></center>
+        <p class="lead"><form action="Users" method="post"> 
+            <center>
             <input type="text" name="search" >
             <input type="submit" name="submitUsers" value="Search Users"></center>
             <br/>
-        </form>
+        </form></p>
+      </div>
+
+    </div>
+        
 
         <div>
             <p><%= result%></p>

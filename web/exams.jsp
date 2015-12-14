@@ -35,12 +35,21 @@
 <jsp:include page="/header.jsp" />
 <hr>
 
-        <form action="Exams" method="post">
+<div class="container">
+
+      <div class="starter-template">
+          <center><h1>Search for an Exam</h1></center>
+        <p class="lead"><form action="Exams" method="post">
             
         
             <center><input type="text" name="searchText" value=""></center>            
             <center><input type="submit" name="search" value="Search"></center><br>            
-        </form>
+        </form></p>
+      </div>
+
+    </div>
+
+        
             
     <p><%= result %></p>
             <table style="width:100%">
