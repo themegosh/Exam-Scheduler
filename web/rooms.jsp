@@ -13,7 +13,7 @@
     Obj-Oriented Analysis & Design - CPAN-205-0NB  
 */    
     //declarations
-    String result = "Input Testing! ";
+    String result = "";
     String pageTitle = "Courses";
     ArrayList<Room> roomList;
     String list = "";
@@ -37,46 +37,50 @@
     
 %>
 <jsp:include page="/header.jsp" />
+<hr>
 
-<h4> Please Enter your course Information</h4> 
+<div class="container">
+
+      <div class="jumbotron">
+<h4>Add a Room</h4> 
         <form action="Rooms" method="post">
             <input type="text" name="room" value="" placeholder="Room Number">          
             <input type="text" name="roomtype" value="" placeholder="Room Type">                     
             <input type="submit" name="save" value="Save"><br>            
         </form>
 
-<h5> Please Enter Semester to Delete</h5>
-<form action="Rooms" method ="post">
-    <input type="text" name="room" value="" palceholder="Room Number">
-    <input type="submit" name="delete" value="Delete" ><br>
-</form>
 
     <p><%= result %></p>
             <table style="width:100%">
                 <tr>        
                     <th>Room Number</th>
                     <th>Room Type</th>
+                    <th>Action</th>
                   
                 </tr>
 
                 <tr>
                     <td>129</td>
                     <td>Lab</td>
-            
+                    <td><a href='#'>Delete</a></td>
                 </tr>
 
                 <tr>
                     <td>132</td>
                     <td>Classroom</td>
+                    <td><a href='#'>Delete</a></td>
               
                 </tr>
 
                 <tr>
                     <td>148</td>
                     <td>Lab</td>
+                    <td><a href='#'>Delete</a></td>
       
                 </tr>
             </table>
+      </div>
+</div>
 
 
 <jsp:include page="/footer.jsp" />

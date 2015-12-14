@@ -60,14 +60,9 @@ if (request.getParameter("submit") != null) { //POST form submission
                                         <td>Course Code:</td>
                                         <td><input type="text" name="courseCode" /></td>
                                     </tr>
-
-                                    <tr>
-                                        <td>User ID:</td>
-                                        <td><input type="text" name="userID" /></td>
-                                    </tr>
                                     
                                     <tr>
-                                        <td>Teacher:</td>
+                                        <td>Teacher Id:</td>
                                         <td><input type="text" name="teacher" /></td>
                                     </tr>
                                     

@@ -13,7 +13,7 @@
     Obj-Oriented Analysis & Design - CPAN-205-0NB  
 */    
     //declarations
-    String result = "Input Testing! ";
+    String result = "";
     String pageTitle = "Courses";
     ArrayList<Course> courseList;
     String list = "";
@@ -41,7 +41,14 @@
 %>
 <jsp:include page="/header.jsp" />
 
-<h4> Please Enter your course Information</h4> 
+
+<hr>
+
+<div class="container">
+
+      <div class="jumbotron">
+
+<h4>Add a Course</h4> 
         <form action="Courses" method="post">
             <input type="text" name="semester" value="" placeholder="Semester">          
             <input type="text" name="program" value="" placeholder="Program">            
@@ -52,12 +59,6 @@
             <input type="submit" name="save" value="Save"><br>            
         </form>
 
-<h5> Please Enter Semester to Delete</h5>
-<form action="Courses" method ="post">
-    <input type="text" name="semester" value="" palceholder="semester">
-    <input type="submit" name="delete" value="Delete" ><br>
-</form>
-
     <p><%= result %></p>
     <hr>
             <table style="width:100%">
@@ -67,16 +68,18 @@
                     <th>Course</th>
                     <th>Teacher</th>
                     <th>Date</th>		
-                    <th>Room</th>    
+                    <th>Room</th> 
+                    <th>Action</th>
                 </tr>
 
                 <tr>
                     <td>1</td>
                     <td>CPAN</td>
                     <td>205-0NA</td>		
-                    <td><center>Alireza</center></td>
+                    <td>Alireza</td>
                     <td>2015/12/14</td>
                     <td>J130</td>
+                    <td><a href='#'>Delete</a></td>
                 </tr>
 
                 <tr>
@@ -86,6 +89,7 @@
                     <td>Rob</td>
                     <td>2015/12/15</td>
                     <td>J132</td>
+                    <td><a href='#'>Delete</a></td>
                 </tr>
 
                 <tr>
@@ -95,8 +99,11 @@
                     <td>Scott</td>
                     <td>2015/12/16</td>
                     <td>E417</td>
+                    <td><a href='#'>Delete</a></td>
                 </tr>
             </table>
+      </div>
+</div>
 
 
 <jsp:include page="/footer.jsp" />

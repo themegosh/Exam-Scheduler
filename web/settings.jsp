@@ -38,18 +38,19 @@ border-collapse: collapse;
         <hr>
         <div class="container">
   <div class="jumbotron">
-    <h1>Find a User</h1> 
+    <h1>Site Settings</h1> 
     <center><form action="Users" method="post"> 
            
-            <input type="text" name="search" >
+            Period Length in mins:
+            <input type="text" name="periodLength" ><br>
+            When does the day begin?
+            <input type="text" name="dayStart" ><br>
+            When does the day end?
+            <input type="text" name="dayEnd" ><br>
             <input type="submit" name="submitUsers" class="btn btn-info" value="Search Users">
             <br/>
         </form></center>
   </div>
-        </div>
-
-        <div>
-            <p>TEST</p>
         </div>
         <form action="User" method="get" id="editForm"></form>
     </body>

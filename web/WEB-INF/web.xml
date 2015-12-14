@@ -13,12 +13,12 @@
         <jsp-file>/exam.jsp</jsp-file>
     </servlet>
       <servlet>
-        <servlet-name>Program</servlet-name>
-        <jsp-file>/program.jsp</jsp-file>
-    </servlet>
-      <servlet>
         <servlet-name>Programs</servlet-name>
         <jsp-file>/programs.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <servlet-name>Rooms</servlet-name>
+        <jsp-file>/rooms.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Users</servlet-name>
@@ -39,10 +39,6 @@
     <servlet>
         <servlet-name>Courses</servlet-name>
         <jsp-file>/courses.jsp</jsp-file>
-    </servlet>
-     <servlet>
-        <servlet-name>Course</servlet-name>
-        <jsp-file>/course.jsp</jsp-file>
     </servlet>
     <servlet>
         <servlet-name>Week</servlet-name>
@@ -80,13 +76,9 @@
         <servlet-name>Courses</servlet-name>
         <url-pattern>/Courses</url-pattern>
     </servlet-mapping>
-     <servlet-mapping>
-        <servlet-name>Course</servlet-name>
-        <url-pattern>/Course</url-pattern>
-    </servlet-mapping>
-      <servlet-mapping>
-        <servlet-name>Program</servlet-name>
-        <url-pattern>/Program</url-pattern>
+    <servlet-mapping>
+        <servlet-name>Rooms</servlet-name>
+        <url-pattern>/Rooms</url-pattern>
     </servlet-mapping>
       <servlet-mapping>
         <servlet-name>Programs</servlet-name>

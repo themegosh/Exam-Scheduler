@@ -9,7 +9,6 @@
     Obj-Oriented Analysis & Design - CPAN-205-0NB  
 */    
     //declarations
-    //String result = "Input Testing! ";
     String pageTitle = "Program";
     ArrayList<Program> programList;
     String list = "";
@@ -36,8 +35,12 @@
     
 %>
 <jsp:include page="/header.jsp" />
+<hr>
 
-<h4> Please Enter your Program Information</h4> 
+<div class="container">
+
+      <div class="jumbotron">
+<h4>Add a Program</h4> 
         <form action="Programs" method="post">
             <input type="text" name="semester" value="" placeholder="Semester">          
             <input type="text" name="program" value="" placeholder="Program">          
@@ -45,37 +48,38 @@
             <input type="submit" name="save" value="Save"><br>            
         </form>
 
-<h5> Please Enter Semester to Delete</h5>
-<form action="Programs" method ="post">
-    <input type="text" name="semester" value="" palceholder="semester">
-    <input type="submit" name="delete" value="Delete" ><br>
-</form>
-
     <p><%= result %></p>
             <table style="width:100%">
                 <tr>        
                     <th>Semester</th>
                     <th>Program</th>
                     <th>Course</th>
+                    <th>Action</th>
                    </tr>
 
                 <tr>
                     <td>1</td>
                     <td>CPAN</td>
-                    <td> Obj-Oriented Analysis & Design- CPAN-205-0NB</td>		
+                    <td> Obj-Oriented Analysis & Design- CPAN-205-0NB</td>
+                    <td><a href='#'>Delete</a></td>
                 </tr>
 
                 <tr>
                     <td>2</td>
                     <td>CPAN</td>
-                    <tdRqmt Analysis & Proc Mdl (Wi) - CPAN-203-0NB</td>		
+                    <td>Rqmt Analysis & Proc Mdl (Wi) - CPAN-203-0NB</td>
+                    <td><a href='#'>Delete</a></td>
                 </tr>
 
                 <tr>
                     <td>3</td>
                     <td>CPAN</td>
-                    <td> Open Source Programming - CPAN-204-0NA</td>		
+                    <td> Open Source Programming - CPAN-204-0NA</td>	
+                    <td><a href='#'>Delete</a></td>
                 </tr>
             </table>
+            
+      </div>
+</div>
 
 <jsp:include page="/footer.jsp" />

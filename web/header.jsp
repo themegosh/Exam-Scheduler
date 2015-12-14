@@ -19,6 +19,9 @@
                 + "<li><a href='./Exams'>Search Exams</a></li>"
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
                 + "<li><a href='./Week'>Exam Schedule</a></li>"
+                + "<li><a href='./Courses'>Courses</a></li>" 
+                + "<li><a href='./Programs'>Programs</a></li>"
+                + "<li><a href='./Rooms'>Rooms</a></li>"
                 + "<li><a href='./User?id="+session.getAttribute("userId")+"'>User Settings</a></li>";
         } else { //admin
             menu += "<li><a href='./Home'>Home</a></li>"
@@ -26,6 +29,9 @@
                 + "<li><a href='./Exam?new=true'>Add New Exam</a></li>"
                 + "<li><a href='./Users'>Search Users</a></li>"
                 + "<li><a href='./Week'>Exam Schedule</a></li>"
+                + "<li><a href='./Courses'>Courses</a></li>" 
+                + "<li><a href='./Programs'>Programs</a></li>"
+                + "<li><a href='./Rooms'>Rooms</a></li>"
                 + "<li><a href='./User?id="+session.getAttribute("userId")+"'>Personal Settings</a></li>"            
 		+ "<li><a href='./Settings'>Settings</a></li>";
         }

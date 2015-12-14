@@ -13,7 +13,7 @@
     Obj-Oriented Analysis & Design - CPAN-205-0NB  
 */    
     //declarations
-    String result = "Testing! ";
+    String result = "";
     String pageTitle = "Exam Timetable";
     ArrayList<Exam> examList;
     String list = "";
