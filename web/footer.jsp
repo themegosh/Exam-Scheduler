@@ -10,8 +10,8 @@
 */
 %>
         <footer>
-            <h5>Property of Humber College</h5>
-            <h5 style="color:black; float:right;">&copy;1738</h5>
+            <h5></h5>
+            <h5 style="color:black; float:right;">Property of Humber College &copy;1738</h5>
         </footer>
     </body>
 </html>
